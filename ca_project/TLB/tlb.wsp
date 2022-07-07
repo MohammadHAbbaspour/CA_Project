@@ -1,0 +1,11 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+cach=0
+TLB=0
+Page_Table=0
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\TLB\TLB.adf|]
+Path=
+[Gui config]
+RunFor=100 ns
