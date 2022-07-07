@@ -53,3 +53,7 @@ extension10=do;tcl;pl
 name11=Waveform Files
 directory11=F:\CA\Project\CA_Project\ca_project\TLB\
 extension11=asdb;awc;asdbc;asdbe
+[Files]
+/tlb.vhd=-1
+[Files.Data]
+.\src\tlb.vhd=VHDL Source Code

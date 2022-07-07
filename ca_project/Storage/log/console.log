@@ -1,0 +1,6 @@
+acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]

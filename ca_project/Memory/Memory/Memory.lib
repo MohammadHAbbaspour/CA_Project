@@ -1,0 +1,32 @@
+timestamp=1657212272045
+
+[~A]
+ModifyID=12
+Version=74
+
+[~MFT]
+0=8|0Memory.mgf|10240|7419
+1=2|1Memory.mgf|9616|8872
+3=2|3Memory.mgf|0|0
+
+[memory]
+A/behavioral=21|../src/memory.vhd|25|1*9616
+BinW64/behavioral=3*0
+I=0*4250
+I/behavioral=0*10240
+M=11|2|vef|1657211044656|../src/memory.vhd|0*1365*0x0e60ee34422051514f82977f8f7bd238b17be0fb|0*1715*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=21|2|vef|1657212272027|../src/memory.vhd|0*9596*0xa313aed2943b5e04f2927aa3137f42ca90df789c|0*10149*0x20116f55b147878295aeff36dce7fc50
+R=../src/memory.vhd|14
+Version=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|fce057f312e65ae91f0ff41fc89566337abcccfdef91c557a1672eee2699beb6
+Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff41f273aaa7effec0328c59b1b4fc9a4bb
+
+[my_package]
+E=1*0
+I=0*4006
+M=3|2|vef|1657210937579|../src/my_package.vhd|0*3563*0xc29fef5e570fbfba00909686118299f6b1dfec92|0*3921*0x23b75c12e3e89f2ef000564498faa8c2
+R=../src/my_package.vhd|6
+Version=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|823f49c35ecb2859e0cb7cf4c5c6bdbdfce28f7d6362405dd6082627ff3a19f5226730e0cad4af24163fd659118827ab
+
+[~U]
+memory=Memory 11|0*1105|
+my_package=3|0*3038|0*3277

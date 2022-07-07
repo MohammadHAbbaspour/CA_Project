@@ -4,6 +4,9 @@ Version=13.0
 cach=.\cach\cach.adf
 tlb=.\TLB\TLB.adf
 page table=.\Page Table\Page Table.adf
+processor=.\Processor\Processor.adf
+storage=.\Storage\Storage.adf
+memory=.\Memory\Memory.adf
 [Browser]
 sort=order
 mode=none
@@ -11,8 +14,11 @@ mode=none
 order=1
 macro=
 [Expand]
-cach=1
-tlb=1
-page table=1
+cach=0
+tlb=0
+page table=0
+processor=0
+storage=0
+memory=1
 [Settings]
-Active=page table
+Active=memory

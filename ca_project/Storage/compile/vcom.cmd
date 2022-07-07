@@ -1,0 +1,1 @@
+-w -erf F:/CA/Project/CA_Project/ca_project/Storage/compile/Storage.erf -d F:/CA/Project/CA_Project/ca_project/Storage/compile -s F:/CA/Project/CA_Project/ca_project/Storage/library.cfg -j F:/CA/Project/CA_Project/ca_project/Storage/projlib.cfg -work Storage -O3 -e 100 -work Storage -2002 "F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd" 

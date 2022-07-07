@@ -1,0 +1,6 @@
+14
+~E 1 "../src/processor.vhd" 8 Processor
+~A 1 "../src/processor.vhd" 17 behavioral
+~E 1 "../src/TestBench/processor_TB.vhd" 7 processor_tb
+~A 1 "../src/TestBench/processor_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/processor_TB.vhd" 47 testbench_for_processor

@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd" 
+MESSAGE "Compile Entity "Memory"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "Memory"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

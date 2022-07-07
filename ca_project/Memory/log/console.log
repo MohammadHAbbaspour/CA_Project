@@ -1,0 +1,129 @@
+acom -O3 -e 100 -work Memory -2002  $dsn/src/my_package.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/my_package.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/my_package.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/my_package.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0019: memory.vhd : (27, 2): Keyword 'end' expected.
+# Error: COMP96_0016: memory.vhd : (27, 11): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0020: memory.vhd : (26, 1): Variable can be declared only in a process or subprogram.
+# Error: COMP96_0019: memory.vhd : (34, 1): Keyword 'process' expected.
+# Error: COMP96_0019: memory.vhd : (36, 140): Keyword 'end' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0019: memory.vhd : (34, 1): Keyword 'process' expected.
+# Error: COMP96_0019: memory.vhd : (36, 140): Keyword 'end' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0015: memory.vhd : (26, 39): ';' expected.
+# Error: COMP96_0015: memory.vhd : (34, 1): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0015: memory.vhd : (34, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0019: memory.vhd : (36, 1): Keyword 'process' expected.
+# Error: COMP96_0019: memory.vhd : (38, 140): Keyword 'end' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0019: memory.vhd : (36, 1): Keyword 'process' expected.
+# Error: COMP96_0019: memory.vhd : (38, 140): Keyword 'end' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0110: memory.vhd : (33, 14): Signal cannot be the target of a variable assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0019: memory.vhd : (29, 2): Keyword 'end' expected.
+# Error: COMP96_0016: memory.vhd : (29, 11): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Memory -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Memory/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
