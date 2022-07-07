@@ -1,0 +1,18 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Page_Table
+[Library]
+Page_Table=.\Page_Table\Page_Table.lib
+[$LibMap$]
+Page_Table=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
