@@ -1,4 +1,6 @@
-6
+11
+~E 1 "../src/cache.vhd" 9 Direct_Cach
+~A 1 "../src/cache.vhd" 20 behavioral
 ~E 1 "../src/memory.vhd" 14 Memory
 ~A 1 "../src/memory.vhd" 25 behavioral
 ~E 1 "../src/processor.vhd" 8 Processor
