@@ -1,2 +1,7 @@
-i<>.\src\hard disck.vhd
-i<>.\src\my_package.vhd
+i<>.\src\hard disk.vhd
+i<>.\src\my pachage.vhd
+i<>.\src\memory.vhd
+i<>.\src\cache.vhd
+i<>.\src\TLB.vhd
+i<>.\src\page table.vhd
+i<>.\src\processor.vhd

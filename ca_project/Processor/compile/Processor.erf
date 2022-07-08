@@ -1,5 +1,0 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: F:/CA/Project/CA_Project/ca_project/Processor/src/processor.vhd" 
-MESSAGE "Compile Entity "Processor"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "Processor"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

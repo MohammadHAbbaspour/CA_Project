@@ -1,4 +1,4 @@
-library ieee;
+							library ieee;
 use ieee.NUMERIC_STD.all;
 use ieee.std_logic_1164.all;
 

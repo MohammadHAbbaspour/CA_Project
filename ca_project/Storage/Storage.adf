@@ -4,62 +4,37 @@ VCS=0
 version=4
 Current Config=compile
 [Configurations]
-compile=Storage
+compile=storage
 [Library]
-Storage=.\Storage\Storage.lib
+storage=.\storage\storage.lib
 [$LibMap$]
-Storage=.
+storage=.
 Active_lib=
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
-FLOWTOOLS=NONE
 REFRESH_FLOW=1
+FLOWTOOLS=NONE
 FAMILY=
-[Files]
-/hard disk.vhd=-1
-/my_package.vhd=-1
-[Files.Data]
-.\src\hard disk.vhd=VHDL Source Code
-.\src\my_package.vhd=VHDL Source Code
-[folders]
-name0=ALINT-PRO Workspaces
-directory0=F:\CA\Project\CA_Project\ca_project\Storage\
-extension0=alintws
-name1=Coverage Databases
-directory1=F:\CA\Project\CA_Project\ca_project\Storage\
-extension1=acdb
-name2=Dll Libraries
-directory2=F:\CA\Project\CA_Project\ca_project\Storage\
-extension2=dll
-name3=Event Lists
-directory3=F:\CA\Project\CA_Project\ca_project\Storage\
-extension3=lst
-name4=HTML Files
-directory4=F:\CA\Project\CA_Project\ca_project\Storage\
-extension4=htm;html
-name5=Log Files
-directory5=F:\CA\Project\CA_Project\ca_project\Storage\
-extension5=log;htm;xml;txt
-name6=Matlab/Simulink Files
-directory6=F:\CA\Project\CA_Project\ca_project\
-extension6=m;mdl;slx
-name7=Memory Files
-directory7=F:\CA\Project\CA_Project\ca_project\Storage\
-extension7=mem;mif;hex
-name8=PDF Files
-directory8=F:\CA\Project\CA_Project\ca_project\Storage\
-extension8=pdf
-name9=Profiler Databases
-directory9=F:\CA\Project\CA_Project\ca_project\Storage\
-extension9=tbp
-name10=Script Files
-directory10=F:\CA\Project\CA_Project\ca_project\Storage\
-extension10=do;tcl;pl
-name11=Waveform Files
-directory11=F:\CA\Project\CA_Project\ca_project\Storage\
-extension11=asdb;awc;asdbc;asdbe
+[SpecTracer]
+WindowVisible=0
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+[Files]
+/hard disk.vhd=-1
+/my pachage.vhd=-1
+/memory.vhd=-1
+/cache.vhd=-1
+/TLB.vhd=-1
+/page table.vhd=-1
+/processor.vhd=-1
+[Files.Data]
+.\src\hard disk.vhd=VHDL Source Code
+.\src\my pachage.vhd=VHDL Source Code
+.\src\memory.vhd=VHDL Source Code
+.\src\cache.vhd=VHDL Source Code
+.\src\TLB.vhd=VHDL Source Code
+.\src\page table.vhd=VHDL Source Code
+.\src\processor.vhd=VHDL Source Code

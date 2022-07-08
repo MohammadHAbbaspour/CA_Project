@@ -1,34 +1,89 @@
-acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
+acom -reorder -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
-# Error: COMP96_0077: hard disk.vhd : (26, 34): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0077: hard disk.vhd : (26, 31): Undefined type of expression. Expected type 'all_page'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work Storage -2002  $dsn/src/my_package.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0055: memory.vhd : (5, 10): Cannot find context item "work.my_package".
+# Error: COMP96_0078: memory.vhd : (18, 29): Unknown identifier "page_type".
+# Error: COMP96_0064: memory.vhd : (18, 29): Unknown type.
+# Error: COMP96_0078: memory.vhd : (19, 19): Unknown identifier "two_word_data_Type".
+# Error: COMP96_0064: memory.vhd : (19, 19): Unknown type.
+# Error: COMP96_0056: memory.vhd : (25, 1): Cannot find referenced entity declaration "Memory".
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -reorder -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/Storage/src/my_package.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/my pachage.vhd
 # Compile Package "my_package"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -reorder -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Memory
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0078: memory.vhd : (26, 15): Unknown identifier "memory_data_blocks_type".
+# Error: COMP96_0064: memory.vhd : (26, 15): Unknown type.
+# Error: COMP96_0289: memory.vhd : (37, 5): Prefix of index must be an array.
+# Error: COMP96_0289: memory.vhd : (42, 12): Prefix of index must be an array.
+# Error: COMP96_0077: memory.vhd : (42, 12): Undefined type of expression. Expected type 'page_type'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/hard disk.vhd
 # Compile Entity "Storage"
 # Compile Architecture "behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "behavioral" of Entity "Processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Error: COMP96_0078: memory.vhd : (26, 15): Unknown identifier "memory_data_blocks_type".
+# Error: COMP96_0064: memory.vhd : (26, 15): Unknown type.
+# Error: COMP96_0289: memory.vhd : (37, 5): Prefix of index must be an array.
+# Error: COMP96_0289: memory.vhd : (42, 12): Prefix of index must be an array.
+# Error: COMP96_0077: memory.vhd : (42, 12): Undefined type of expression. Expected type 'page_type'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/my pachage.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/my pachage.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/my pachage.vhd
+# Compile Package "my_package"
 # Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-# Design: Design "Processor" has been set as active.
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].

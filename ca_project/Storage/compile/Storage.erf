@@ -1,5 +1,4 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd" 
-MESSAGE "Compile Entity "Storage"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "Storage"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 
+MESSAGE "File: C:/Users/dsool/Desktop/freedome/CA_proj/ca_project/storage/src/my pachage.vhd" 
+MESSAGE "Compile Package "my_package"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

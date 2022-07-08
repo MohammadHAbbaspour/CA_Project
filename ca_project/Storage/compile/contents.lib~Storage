@@ -1,3 +1,7 @@
-15
+6
+~E 1 "../src/memory.vhd" 14 Memory
+~A 1 "../src/memory.vhd" 25 behavioral
+~E 1 "../src/processor.vhd" 8 Processor
+~A 1 "../src/processor.vhd" 16 behavioral
 ~E 1 "../src/hard disk.vhd" 13 Storage
 ~A 1 "../src/hard disk.vhd" 20 behavioral
