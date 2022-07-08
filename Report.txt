@@ -1,0 +1,6 @@
+Processor  : +
+Storage    : +
+Memory     : +
+TLB        : -
+Page Table : -
+Cach       : -

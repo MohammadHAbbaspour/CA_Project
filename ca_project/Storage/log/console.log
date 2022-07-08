@@ -3,4 +3,32 @@ acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
 # File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
 # Compile Entity "Storage"
 # Compile Architecture "behavioral" of Entity "Storage"
+# Error: COMP96_0077: hard disk.vhd : (26, 34): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0077: hard disk.vhd : (26, 31): Undefined type of expression. Expected type 'all_page'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Storage -2002  $dsn/src/my_package.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Storage/src/my_package.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/Storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Design: Design "Processor" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].

@@ -19,6 +19,6 @@ tlb=0
 page table=0
 processor=0
 storage=0
-memory=1
+memory=0
 [Settings]
 Active=memory

@@ -322,7 +322,7 @@ I 000051 55 1039          1657209909127 behavioral
 	(_use(std(standard))(ieee(std_logic_1164))(ieee(NUMERIC_STD)))
 	(_model . behavioral 1 -1)
 )
-V 000051 55 1039          1657209911699 behavioral
+I 000051 55 1039          1657209911699 behavioral
 (_unit VHDL(processor 0 8(behavioral 0 17))
 	(_version vef)
 	(_time 1657209911700 2022.07.07 20:35:11)
@@ -402,4 +402,30 @@ V 000042 55 406 0 testbench_for_processor
 		)
 	)
 	(_use(std(standard))(ieee(NUMERIC_STD))(ieee(std_logic_1164)))
+)
+V 000051 55 1039          1657265043864 behavioral
+(_unit VHDL(processor 0 8(behavioral 0 16))
+	(_version vef)
+	(_time 1657265043865 2022.07.08 11:54:03)
+	(_source(\../src/processor.vhd\))
+	(_parameters tan)
+	(_code 035655040254011501571658510400055504010403)
+	(_ent
+		(_time 1657197236829)
+	)
+	(_object
+		(_port(_int index -1 0 10(_ent(_in))))
+		(_type(_int ~STD_LOGIC_VECTOR{15~downto~0}~12 0 11(_array -2((_dto i 15 i 0)))))
+		(_port(_int vr_add 0 0 11(_ent(_out))))
+		(_type(_int ~STD_LOGIC_VECTOR{15~downto~0}~13 0 20(_array -2((_dto i 15 i 0)))))
+		(_type(_int virtual_address 0 20(_array 1((_to i 0 i 3)))))
+		(_var(_int v_addrs 2 0 21(_prcs 0(((_string \"1011001101010111"\))((_string \"1101110111010010"\))((_string \"0111101100101111"\))((_string \"1101111100011011"\))))))
+		(_prcs
+			(line__18(_arch 0 0 18(_prcs(_simple)(_trgt(1))(_sens(0)))))
+		)
+		(_type(_ext std.standard.INTEGER(0 INTEGER)))
+		(_type(_ext ieee.std_logic_1164.STD_LOGIC(1 STD_LOGIC)))
+	)
+	(_use(std(standard))(ieee(std_logic_1164))(ieee(NUMERIC_STD)))
+	(_model . behavioral 1 -1)
 )
