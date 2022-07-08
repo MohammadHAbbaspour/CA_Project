@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: F:/CA/Project/CA_Project/ca_project/cach/src/cach.vhd" 
+MESSAGE "Compile Entity "Direct_Cach"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "Direct_Cach"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 

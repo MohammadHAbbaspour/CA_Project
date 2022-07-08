@@ -1,7 +1,6 @@
-# Design: Design cach already active.
-# DESIGN: Default Design Language: VHDL
-# DESIGN: Default BDE Language: VHDL
-# DESIGN: Flow Manager: Not Defined
-# Design: 3:21 PM, Thursday, July 7, 2022
-# Design: Opening design "F:\CA\Project\CA_Project\ca_project\TLB\TLB.adf"
-# Design: Design "TLB" has been set as active.
+acom -O3 -e 100 -work cach -2002  $dsn/src/cach.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/cach/src/cach.vhd
+# Compile Entity "Direct_Cach"
+# Compile Architecture "behavioral" of Entity "Direct_Cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]

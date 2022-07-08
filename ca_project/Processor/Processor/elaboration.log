@@ -1,4 +1,4 @@
-Active-HDL 13.0.375.8320 2022-07-08 11:54:00
+Active-HDL 13.0.375.8320 2022-07-08 16:21:40
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(processor_tb)
@@ -27,3 +27,7 @@ ieee                           | Standard IEEE packages library
 processor                      | None
 std                            | Standard VHDL library
 ----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+

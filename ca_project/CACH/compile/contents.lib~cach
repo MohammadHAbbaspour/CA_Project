@@ -1,1 +1,3 @@
-0
+12
+~E 1 "../src/cach.vhd" 9 Direct_Cach
+~A 1 "../src/cach.vhd" 20 behavioral
