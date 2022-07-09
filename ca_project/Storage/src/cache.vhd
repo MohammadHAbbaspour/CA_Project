@@ -1,7 +1,6 @@
-							library ieee;
+library ieee;
 use ieee.NUMERIC_STD.all;
 use ieee.std_logic_1164.all;  
-
 use work.my_package.all;
 
 
@@ -56,3 +55,71 @@ begin
 	
 end	behavioral;	 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------Design of Two-Way set assosiative cache--------------------------------------------
+library ieee;
+use ieee.NUMERIC_STD.all;
+use ieee.std_logic_1164.all;  
+use work.my_package.all;
+
+entity TwoWay_Cach is
+	port (
+		ph_add : in std_logic_vector(10 downto 0);
+		hit : out std_logic;
+		read_data : out std_logic_vector(7 downto 0);
+		w_bit : in std_logic;
+		write_data_from_memory : in two_word_data_Type
+	);
+end TwoWay_Cach;  
+
+
+architecture behavioral of TwoWay_Cach is
+signal valid : valid2setarray := (others => (others => '0'));
+signal cach_data : cache2setarray := (others => (others => (others => (others => '0'))));	 
+signal tags : tag2setarray := (others => (others => (others => '0'))); 
+signal sel: std_logic := '1';
+begin
+	process (ph_add)
+	is
+		variable byte_offset : std_logic_vector(1 downto 0) := ph_add(1 downto 0);
+		variable word_offset : std_logic := ph_add(2);
+		variable index : std_logic_vector(4 downto 0) := ph_add(7 downto 3);
+		variable tag : std_logic_vector(2 downto 0) := ph_add(10 downto 8);
+		variable d : two_word_data_Type;
+		variable word : std_logic_vector(31 downto 0);
+	begin
+		if w_bit = '0' then
+			if (valid(to_integer(unsigned(index)))(0) = '1') and (tags(to_integer(unsigned(index)))(0) = tag) then
+				hit <= '1';
+				d := cach_data(to_integer(unsigned(index)))(0);
+				if word_offset = '0' then
+					word := d(0);
+				else
+					word := d(1);
+				end if;
+				read_data <= word(to_integer(unsigned(byte_offset)) * 8 + 7 downto to_integer(unsigned(byte_offset)) * 8);
+	
+			elsif (valid(to_integer(unsigned(index)))(1) = '1') and (tags(to_integer(unsigned(index)))(1) = tag) then
+				hit <= '1';
+				d := cach_data(to_integer(unsigned(index)))(1);
+				if word_offset = '0' then
+					word := d(0);
+				else
+					word := d(1);
+				end if;
+				read_data <= word(to_integer(unsigned(byte_offset)) * 8 + 7 downto to_integer(unsigned(byte_offset)) * 8);
+			else
+				hit <= '0';
+			end if;
+		end if;
+		if w_bit = '1' then
+			valid(to_integer(unsigned(index)))(to_integer(unsigned'('0' & sel))) <= '1';
+			cach_data(to_integer(unsigned(index)))(to_integer(unsigned'('0' & sel))) <= write_data_from_memory;
+			tags(to_integer(unsigned(index)))(to_integer(unsigned'('0' & sel))) <= tag;
+			sel <= not(sel);
+		end if;
+	end process;
+	
+end	behavioral;

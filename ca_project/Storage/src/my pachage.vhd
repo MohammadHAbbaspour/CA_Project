@@ -9,6 +9,11 @@ package my_package is
 	type memory_data_blocks_type is array (0 to 12) of page_type;
 	type cach_data_blocks_type is array (0 to 31) of two_word_data_Type;
 	type tag_data_type is array (0 to 31) of std_logic_vector(2 downto 0);
+	type valid2setarray is array (0 to 31) of std_logic_vector(1 downto 0);
+	type tag2set is array (0 to 1) of std_logic_vector(2 downto 0);
+	type tag2setarray is array (0 to 31) of tag2set;
+	type cache2set is array (0 to 1) of two_word_data_Type;
+	type cache2setarray is array (0 to 31) of cache2set;
 end my_package;
 
 				
