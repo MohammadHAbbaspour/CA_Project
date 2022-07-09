@@ -1,0 +1,59 @@
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Error: COMP96_0028: io.vhd : (2, 7): Identifier or keyword expected.
+# Error: COMP96_0015: io.vhd : (2, 7): ';' expected.
+# Error: COMP96_0019: io.vhd : (2, 8): Keyword 'end' expected.
+# Error: COMP96_0016: io.vhd : (3, 1): Design unit declaration expected.
+# Error: COMP96_0018: io.vhd : (4, 0): Identifier expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Error: COMP96_0028: io.vhd : (2, 7): Identifier or keyword expected.
+# Error: COMP96_0015: io.vhd : (2, 7): ';' expected.
+# Error: COMP96_0019: io.vhd : (2, 8): Keyword 'end' expected.
+# Error: COMP96_0016: io.vhd : (3, 1): Design unit declaration expected.
+# Error: COMP96_0018: io.vhd : (3, 11): Identifier expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Error: COMP96_0028: io.vhd : (4, 2): Identifier or keyword expected.
+# Error: COMP96_0015: io.vhd : (4, 2): ';' expected.
+# Error: COMP96_0019: io.vhd : (4, 3): Keyword 'end' expected.
+# Error: COMP96_0016: io.vhd : (5, 1): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Error: COMP96_0018: io.vhd : (4, 2): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Error: COMP96_0078: io.vhd : (3, 14): Unknown identifier "std_logic".
+# Error: COMP96_0064: io.vhd : (3, 14): Unknown type.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Error: VLM_0030: io.vhd : (4, 10): Package "storage.my_package" must be recompiled because package "ieee.NUMERIC_STD" has changed.
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0019: io.vhd : (19, 5): Keyword 'component' expected.
+# Error: COMP96_0015: io.vhd : (29, 12): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Deskto

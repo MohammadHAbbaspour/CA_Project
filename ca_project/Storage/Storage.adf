@@ -30,6 +30,9 @@ Selected=
 /TLB.vhd=-1
 /page table.vhd=-1
 /processor.vhd=-1
+/io.vhd=-1
+TestBench/pagetable_TB.vhd=-1
+TestBench/pagetable_TB_runtest.do=-1
 [Files.Data]
 .\src\hard disk.vhd=VHDL Source Code
 .\src\my pachage.vhd=VHDL Source Code
@@ -38,3 +41,8 @@ Selected=
 .\src\TLB.vhd=VHDL Source Code
 .\src\page table.vhd=VHDL Source Code
 .\src\processor.vhd=VHDL Source Code
+.\src\io.vhd=VHDL Source Code
+.\src\TestBench\pagetable_TB.vhd=VHDL Test Bench
+.\src\TestBench\pagetable_TB_runtest.do=Macro
+[Groups]
+TestBench=1

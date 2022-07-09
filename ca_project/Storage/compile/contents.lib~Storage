@@ -1,8 +1,9 @@
-64
+68
 ~E 1 "../src/cache.vhd" 8 Direct_Cach
 ~A 1 "../src/cache.vhd" 19 behavioral
 ~E 1 "../src/TLB.vhd" 9 Fully_Associative_TLB
 ~A 1 "../src/TLB.vhd" 20 behavioral
+~E 1 "../src/io.vhd" 6 io
 ~E 1 "../src/memory.vhd" 14 Memory
 ~A 1 "../src/memory.vhd" 25 behavioral
 ~E 1 "../src/page table.vhd" 7 PageTable
