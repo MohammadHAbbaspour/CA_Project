@@ -12,13 +12,13 @@ use work.my_package.all;
 ------- size of every block = 432/32 = 13  (size of page = 32 words)
 entity Storage is 	
 	port (
+		r_bit : in std_logic;
 		storage_add : in std_logic_vector(8 downto 0);   	-- referes to OS Fault Handler
-		page : out page_type; 								-- every data size is 2 word = 2(16) bit => every page has 32 words
-		r_bit : in std_logic
+		page : out page_type								-- every data size is 2 word = 2(16) bit => every page has 32 words	
 	);
 end Storage;	  
 
-architecture behavioral of Storage is
+architecture Storage_behavioral of Storage is
 begin  
 	process (storage_add)
 	is	
@@ -78,7 +78,9 @@ begin
 										
 										
 	begin
-		 page <= data(index);
+		if r_bit = '1' then
+		 page <= data(index); 
+		end if;
 	end process;
-end	behavioral;
+end	Storage_behavioral;
 -----------------------------------------------------------------------------------------------------------------------

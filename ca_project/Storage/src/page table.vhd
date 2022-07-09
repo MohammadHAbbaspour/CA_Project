@@ -6,36 +6,37 @@ use work.my_package.all;
 
 entity PageTable is
   port (
+  	r_bit : in std_logic;
     w_bit : in std_logic;
     vpn : in std_logic_vector(8 downto 0);
     write_ppn : in std_logic_vector(3 downto 0);
     read_ppn : out std_logic_vector(3 downto 0);
-    hit : out std_logic;
-	r_bit : in std_logic
+    hit : out std_logic
+	
   );
 end PageTable; 
 
 
 
-architecture behavioral of PageTable is
+architecture PageTable_behavioral of PageTable is
 signal ppns : ppnarray:= (others => (others => '0'));  
 signal valid: std_logic_vector(0 to 511) := (others => '0');
 begin 
   process (vpn)  
   is 
   begin
-    if w_bit = '0' then
+    if r_bit = '1' then
       hit <= '0';
       if valid(to_integer(unsigned(vpn))) = '1' then
         read_ppn <= ppns(to_integer(unsigned(vpn)));
         hit <= '1';
       end if;
-        end if;     
+    end if;     
     if w_bit = '1' then
       valid(to_integer(unsigned(vpn))) <= '1';
       ppns(to_integer(unsigned(vpn))) <= write_ppn;
     end if;
   end process;
-end  behavioral;
+end  PageTable_behavioral;
 
 ----------------------------------------------------------------------------------------------------------------------------------------

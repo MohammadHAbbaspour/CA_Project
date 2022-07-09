@@ -12,18 +12,19 @@ use work.my_package.all;
 --------------------------------------------- design of memory without Page Table (data memory) -----------------------------------------
 
 entity Memory is
-	port (
+	port ( 
+		r_bit : in std_logic;
 		w_bit : in std_logic; -- if equals to 0 => read from memmory and write in CACH else write from hard disk in memory
 		ph_add : in std_logic_vector(10 downto 0);
 		write_data_from_disk : in page_type;
-		read_data : out two_word_data_Type;
-		r_bit : in std_logic
+		read_data : out two_word_data_Type
+		
 	);
 end Memory; 
 
 
 
-architecture behavioral of Memory is
+architecture Memory_behavioral of Memory is
 signal data : memory_data_blocks_type := (others => (others => (others => (others => '0'))));
 signal counter : integer := 0;
 begin 
@@ -37,7 +38,8 @@ begin
 		if w_bit = '1' then
 			 data(counter) <= write_data_from_disk;
              counter <= (counter + 1) mod 13;
-        else 
+        end if;
+		if r_bit = '1' then
 			page_offset := ph_add(6 downto 0);
 			ppn := ph_add(10 downto 7);
 			page := data(to_integer(unsigned(ppn)));
@@ -45,6 +47,6 @@ begin
 			read_data <= page(two_word_offset);
 		end if;
 	end process;
-end	behavioral;
+end	Memory_behavioral;
 
 ----------------------------------------------------------------------------------------------------------------------------------------

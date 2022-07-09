@@ -7,12 +7,12 @@ use work.my_package.all;
 ------------------------------------------------------ design of Direct Map Cach -----------------------------------------------------------
 entity Direct_Cach is
 	port (
+		r_bit : in std_logic;
+		w_bit : in std_logic; 
 		ph_add : in std_logic_vector(10 downto 0);
-		hit : out std_logic;
-		read_data : out std_logic_vector(7 downto 0);
-		w_bit : in std_logic;
 		write_data_from_memory : in two_word_data_Type;
-		r_bit : in std_logic
+		read_data : out std_logic_vector(7 downto 0);
+		hit : out std_logic
 	);
 end Direct_Cach;  
 
@@ -31,7 +31,7 @@ begin
 		variable d : two_word_data_Type;
 		variable word : std_logic_vector(31 downto 0);
 	begin
-		if w_bit = '0' then
+		if r_bit = '1' then
 			if valid(to_integer(unsigned(index))) = '0' then
 				valid(to_integer(unsigned(index))) <= '1';
 				hit <= '0';
@@ -47,7 +47,8 @@ begin
 			else
 				hit <= '0';
 			end if;	
-		else
+		end if;
+		if w_bit = '1' then
 			valid(to_integer(unsigned(index))) <= '1';
 			cach_data(to_integer(unsigned(index))) <= write_data_from_memory;
 			tags(to_integer(unsigned(index))) <= tag;
@@ -67,12 +68,12 @@ use work.my_package.all;
 
 entity TwoWay_Cach is
 	port (
+		r_bit : in std_logic;
+		w_bit : in std_logic; 
 		ph_add : in std_logic_vector(10 downto 0);
-		hit : out std_logic;
-		read_data : out std_logic_vector(7 downto 0);
-		w_bit : in std_logic;
 		write_data_from_memory : in two_word_data_Type;
-		r_bit : in std_logic
+		read_data : out std_logic_vector(7 downto 0);
+		hit : out std_logic
 	);
 end TwoWay_Cach;  
 
@@ -92,7 +93,7 @@ begin
 		variable d : two_word_data_Type;
 		variable word : std_logic_vector(31 downto 0);
 	begin
-		if w_bit = '0' then
+		if r_bit = '1' then
 			if (valid(to_integer(unsigned(index)))(0) = '1') and (tags(to_integer(unsigned(index)))(0) = tag) then
 				hit <= '1';
 				d := cach_data(to_integer(unsigned(index)))(0);

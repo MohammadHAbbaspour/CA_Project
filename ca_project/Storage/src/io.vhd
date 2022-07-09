@@ -12,54 +12,82 @@ end io;
 
 architecture behavioral of io is
 ----------------------------- processor signals ---------------------------------------
-	signal idx : integer; 
-	signal processor_r_bit : std_logic;
+	signal proc_r_bit :  std_logic;
+	signal proc_index :  integer;
+	signal proc_vr_add : std_logic_vector(15 downto 0);
 ----------------------------- TLB signals ---------------------------------------------
-	signal virtual_address : std_logic_vector(15 downto 0);
-	signal tlb_w_bit : std_logic;
-	signal page_offset : std_logic_vector(6 downto 0);
-	signal vpn : std_logic_vector(8 downto 0);
-	signal ppn : std_logic_vector(3 downto 0);
-	signal tlb_hit : std_logic;
-	signal write_ppn : std_logic_vector(3 downto 0);
 	signal tlb_r_bit : std_logic;
+	signal tlb_w_bit : std_logic;
+	signal tlb_vpn : std_logic_vector(8 downto 0);
+	signal tlb_ppn : std_logic_vector(3 downto 0);
+	signal tlb_ppn_from_pt : std_logic_vector(3 downto 0);
+	signal tlb_hit : std_logic;
+	
 ----------------------------------------------------------------------------------------
--------------------------------cach signals --------------------------------------------
-	signal physical_address : std_logic_vector(10 downto 0);
-	signal cach_hit : std_logic;
-	signal cach_read_data : std_logic_vector(7 downto 0);
-	signal cach_w_bit : std_logic;
-	signal cach_write_data : two_word_data_Type;
-	signal cach_r_bit : std_logic;
+-------------------------------cach signals -------------------------------------------- 
+	signal cache_r_bit : std_logic;
+	signal cache_w_bit : std_logic; 
+	signal cache_ph_add : std_logic_vector(10 downto 0);
+	signal cache_write_data_from_memory : two_word_data_Type;
+	signal cache_read_data : std_logic_vector(7 downto 0);
+	signal cache_hit : std_logic;
+	
 -----------------------------------------------------------------------------------------
+---------------------------------page table signals---------------------------------------
+	signal pt_r_bit : std_logic;
+    signal pt_w_bit : std_logic;
+    signal pt_vpn : std_logic_vector(8 downto 0);
+    signal pt_write_ppn : std_logic_vector(3 downto 0);
+    signal pt_read_ppn : std_logic_vector(3 downto 0);
+    signal pt_hit : std_logic;
+----------------------------------------------------------------------------------------
+--------------------------------- hard signals-----------------------------------------
+	signal hard_r_bit : std_logic;
+	signal hard_storage_add : std_logic_vector(8 downto 0);   	-- referes to OS Fault Handler
+	signal hard_page : page_type;
+-----------------------------------------------------------------------------------------
+-------------------------------------memory signals--------------------------------------
+	signal mem_r_bit : std_logic;
+	signal mem_w_bit : std_logic;
+	signal mem_ph_add : std_logic_vector(10 downto 0);
+	signal mem_write_data_from_disk : page_type;
+	signal mem_read_data : two_word_data_Type;	
+-------------------------------------------------------------------------------------------
 begin
-	idx <= idxin;
-	processor : entity work.Processor(Processor_behavioral) port map (index => idx, vr_add => virtual_address, r_bit => processor_r_bit);	
+	processor : entity work.Processor(Processor_behavioral) port map (r_bit => proc_r_bit,
+																	index => proc_index,
+																	vr_add => proc_vr_add);	
 	
-	vpn <= virtual_address(15 downto 7);
-	page_offset <= virtual_address(6 downto 0);
-	tlb_w_bit <= '0';
-	write_ppn <= (others => '0');
+		tlb : entity work.Fully_Associative_TLB(TLB_behavioral) port map(r_bit => tlb_r_bit,
+																	w_bit => tlb_w_bit,
+																	vpn => tlb_vpn,
+																	ppn => tlb_ppn,
+																	ppn_from_pt => tlb_ppn_from_pt,
+																	hit => tlb_hit);
 	
-	tlb : entity work.Fully_Associative_TLB(TLB_behavioral) port map(w_bit => tlb_w_bit,
-																	vpn => vpn,
-																	ppn => ppn,
-																	hit => tlb_hit,
-																	ppn_from_pt => write_ppn);
-	
-	cach : entity work.Direct_Cach(Direct_Cach_behavioral) port map(ph_add => physical_address,
-																			hit => cach_hit,
-																			read_data => cach_read_data,
-																			w_bit => cach_w_bit,
-																			write_data_from_memory => cach_write_data);																	
-	process(ppn, write_ppn)
+	cach : entity work.Direct_Cach(Direct_Cach_behavioral) port map(r_bit => cache_r_bit,
+																	w_bit => cache_w_bit,
+																	ph_add => cache_ph_add,
+																	write_data_from_memory => cache_write_data_from_memory,
+																	read_data => cache_read_data,
+																	hit => cache_hit);
+	pt: entity work.PageTable(PageTable_behavioral) port map(r_bit => pt_r_bit,
+															w_bit => pt_w_bit,
+															vpn => pt_vpn,
+															write_ppn => pt_write_ppn,
+															read_ppn => pt_read_ppn,
+															hit => pt_hit);
+	hard: entity work.Storage(Storage_behavioral) port map(r_bit => hard_r_bit,
+															storage_add => hard_storage_add,
+															page => hard_page); 
+	mem: entity work.Memory(Memory_behavioral) port map(r_bit => mem_r_bit,
+														w_bit => mem_w_bit,
+														ph_add => mem_ph_add,
+														write_data_from_disk => mem_write_data_from_disk,
+														read_data => mem_read_data);
+	process
 	is
 	begin
-		if tlb_hit = '1' then 
-			physical_address <= ppn & page_offset;
-			cach_w_bit <= '0';
-			cach_write_data <= (others => (others => '0'));
-		end if;
 	end process;
 	
 end	behavioral;	

@@ -6,10 +6,10 @@ use ieee.std_logic_1164.all;
 
 ------------------------------------------------- Proccessor design ----------------------------------------------------
 entity Processor is 
-	port (
+	port (									  
+	r_bit : in std_logic;
 	index : in integer;
-	vr_add : out std_logic_vector(15 downto 0);
-	r_bit : in std_logic
+	vr_add : out std_logic_vector(15 downto 0)
 	);
 end Processor;	  
 
@@ -23,8 +23,10 @@ begin
 												"1101110111010010",
 												"0111101100101111",
 												"1101111100011011");
-	begin
-		vr_add <= v_addrs(index);				   
+	begin 
+		if r_bit = '1' then
+			vr_add <= v_addrs(index);	
+		end if;
 	end process;
 end	Processor_behavioral;
 ------------------------------------------------------------------------------------------------------------------------

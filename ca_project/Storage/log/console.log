@@ -1,200 +1,104 @@
-acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/TLB.vhd
-# Compile Entity "Fully_Associative_TLB"
-# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Warning: DAGGEN_0002: io.vhd : (32, 0): Process has no effect - no sequential statements.
-# Warning: DAGGEN_0001: io.vhd : (32, 0): Process without explicit or implicit wait statement - possible infinite loop.
-# Compile success 0 Errors 2 Warnings  Analysis time :  31.0 [ms]
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# ELBREAD: Error: Architecture 'behavioral' of entity 'io' not found in library 'storage'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+io io behavioral
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5569 kB (elbread=427 elab2=5003 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
-#  6:35 PM, Saturday, July 9, 2022
-#  Simulation has been initialized
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+io io behavioral
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Error: VLM_0030: hard disk.vhd : (5, 10): Package "storage.my_package" must be recompiled because package "ieee.NUMERIC_STD" has changed.
+# Error: COMP96_0078: hard disk.vhd : (16, 14): Unknown identifier "page_type".
+# Error: COMP96_0064: hard disk.vhd : (16, 14): Unknown type.
+# Compile Architecture "behavioral" of Entity "Storage"
+# Error: VLM_0009: hard disk.vhd : (21, 1): Entity "storage.Storage" must be recompiled because package "ieee.NUMERIC_STD" has changed.
+# Error: COMP96_0056: hard disk.vhd : (21, 1): Cannot find referenced entity declaration "Storage".
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5570 kB (elbread=427 elab2=5003 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
-#  6:38 PM, Saturday, July 9, 2022
-#  Simulation has been initialized
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/my pachage.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0329: io.vhd : (35, 2): Generate statement must have a label.
-# Error: COMP96_0019: io.vhd : (35, 19): Keyword 'generate' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.io" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/io.vhd".
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0019: io.vhd : (35, 31): Keyword 'generate' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.io" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/io.vhd".
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0019: io.vhd : (35, 31): Keyword 'generate' expected.
-# Error: COMP96_0015: io.vhd : (37, 6): ';' expected.
-# Error: COMP96_0016: io.vhd : (37, 8): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.io" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/io.vhd".
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
 # Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
 # Compile Entity "Direct_Cach"
 # Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
 # Compile Entity "TwoWay_Cach"
 # Compile Architecture "behavioral" of Entity "TwoWay_Cach"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0046: io.vhd : (52, 4): Sequential statement expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+io io behavioral
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5581 kB (elbread=427 elab2=5014 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
-#  6:59 PM, Saturday, July 9, 2022
-#  Simulation has been initialized
-run
-# RUNTIME: Fatal Error: RUNTIME_0047 processor.vhd (26): Index -2147483648 out of range (0 to 3).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /io/processor,  Process: line__18.
-# KERNEL: Stopped at time 0 ps + 0.
-# VSIM: Error: Fatal error occurred during simulation.
-endsim
-# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
+# Compile Entity "Direct_Cach"
+# Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
+# Compile Entity "TwoWay_Cach"
+# Compile Architecture "behavioral" of Entity "TwoWay_Cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd
+# Compile Entity "PageTable"
+# Compile Architecture "behavioral" of Entity "PageTable"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
+# Compile Entity "Fully_Associative_TLB"
+# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Processor_behavioral" of Entity "Processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/my pachage.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/memory.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
 # Compile Entity "Memory"
 # Compile Architecture "behavioral" of Entity "Memory"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
+# Compile Entity "Direct_Cach"
+# Error: COMP96_0018: cache.vhd : (17, 2): Identifier expected.
+# Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
+# Compile Entity "TwoWay_Cach"
+# Compile Architecture "behavioral" of Entity "TwoWay_Cach"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
 # Compile Entity "Direct_Cach"
 # Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
 # Compile Entity "TwoWay_Cach"
@@ -202,71 +106,135 @@ acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
 # Compile Entity "Direct_Cach"
 # Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
 # Compile Entity "TwoWay_Cach"
 # Compile Architecture "behavioral" of Entity "TwoWay_Cach"
-# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/TLB.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
+# Compile Entity "Fully_Associative_TLB"
+# Error: COMP96_0018: TLB.vhd : (18, 2): Identifier expected.
+# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
 # Compile Entity "Fully_Associative_TLB"
 # Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd
+# Compile Entity "PageTable"
+# Compile Architecture "behavioral" of Entity "PageTable"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/processor.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/processor.vhd
+# Compile Entity "Processor"
+# Compile Architecture "Processor_behavioral" of Entity "Processor"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/page table.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd
 # Compile Entity "PageTable"
-# Compile Architecture "behavioral" of Entity "PageTable"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/processor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/processor.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Processor_behavioral" of Entity "Processor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0207: io.vhd : (34, 2): No actual specified for local port "r_bit".
-# Error: COMP96_0207: io.vhd : (41, 2): No actual specified for local port "r_bit".
-# Error: COMP96_0207: io.vhd : (47, 2): No actual specified for local port "r_bit".
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0207: io.vhd : (37, 2): No actual specified for local port "r_bit".
-# Error: COMP96_0207: io.vhd : (44, 2): No actual specified for local port "r_bit".
-# Error: COMP96_0207: io.vhd : (50, 2): No actual specified for local port "r_bit".
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# Compile Architecture "PageTable_behavioral" of Entity "PageTable"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/hard disk.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
 # Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/page table.vhd
-# Compile Entity "PageTable"
-# Compile Architecture "behavioral" of Entity "PageTable"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# Compile Architecture "Storage_behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
 # Compile Entity "io"
 # Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0207: io.vhd : (44, 2): No actual specified for local port "r_bit".
-# Error: COMP96_0207: io.vhd : (50, 2): No actual specified for local port "r_bit".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
+# Error: COMP96_0018: io.vhd : (19, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (20, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (21, 19): Identifier expected.
+# Error: COMP96_0018: io.vhd : (22, 19): Identifier expected.
+# Error: COMP96_0018: io.vhd : (23, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (24, 19): Identifier expected.
+# Error: COMP96_0018: io.vhd : (28, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (29, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (30, 24): Identifier expected.
+# Error: COMP96_0018: io.vhd : (31, 40): Identifier expected.
+# Error: COMP96_0018: io.vhd : (32, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (33, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (37, 20): Identifier expected.
+# Error: COMP96_0018: io.vhd : (38, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (39, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (40, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (41, 26): Identifier expected.
+# Error: COMP96_0018: io.vhd : (42, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (45, 22): Identifier expected.
+# Error: COMP96_0018: io.vhd : (46, 28): Identifier expected.
+# Error: COMP96_0018: io.vhd : (47, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (50, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (51, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
+# Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
+# Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
+# Compile failure 27 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (28, 2): ';' expected.
+# Error: COMP96_0018: io.vhd : (28, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (29, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (30, 24): Identifier expected.
+# Error: COMP96_0018: io.vhd : (31, 40): Identifier expected.
+# Error: COMP96_0018: io.vhd : (32, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (33, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (37, 20): Identifier expected.
+# Error: COMP96_0018: io.vhd : (38, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (39, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (40, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (41, 26): Identifier expected.
+# Error: COMP96_0018: io.vhd : (42, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (45, 22): Identifier expected.
+# Error: COMP96_0018: io.vhd : (46, 28): Identifier expected.
+# Error: COMP96_0018: io.vhd : (47, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (50, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (51, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
+# Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
+# Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
+# Compile failure 22 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (28, 2): ';' expected.
+# Error: COMP96_0018: io.vhd : (28, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (29, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (30, 24): Identifier expected.
+# Error: COMP96_0018: io.vhd : (31, 40): Identifier expected.
+# Error: COMP96_0018: io.vhd : (32, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (33, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (37, 20): Identifier expected.
+# Error: COMP96_0018: io.vhd : (38, 23): Identifier expected.
+# Error: COMP96_0018: io.vhd : (39, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (40, 27): Identifier expected.
+# Error: COMP96_0018: io.vhd : (41, 26): Identifier expected.
+# Error: COMP96_0018: io.vhd : (42, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (45, 22): Identifier expected.
+# Error: COMP96_0018: io.vhd : (46, 28): Identifier expected.
+# Error: COMP96_0018: io.vhd : (47, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (50, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (51, 21): Identifier expected.
+# Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
+# Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
+# Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
+# Compile failure 22 Error

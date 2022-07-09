@@ -7,13 +7,13 @@ use work.my_package.all;
 
 ----------------------------------------------------- design of Fully Associative TLB ------------------------------------------------------
 entity Fully_Associative_TLB is 	
-	port (	 
+	port (
+		r_bit : in std_logic;
 		w_bit : in std_logic;
 		vpn : in std_logic_vector(8 downto 0);
 		ppn : out std_logic_vector(3 downto 0);
-		hit : out std_logic;
 		ppn_from_pt : in std_logic_vector(3 downto 0);
-		r_bit : in std_logic
+		hit : out std_logic
 	);
 end Fully_Associative_TLB;	
 
@@ -27,7 +27,7 @@ begin
 	process (vpn)
 	is
 	begin
-		if w_bit = '0' then
+		if r_bit = '1' then
 			hit <= '0';
 			for i in 0 to 47 loop
 				if valid(i) = '1' and tags(i) = vpn then
@@ -36,7 +36,8 @@ begin
 					exit;
 				end if;
 			end loop;
-		else
+		end if;
+		if w_bit = '1' then
 			valid(sel) <= '1';
 			tags(sel) <= vpn;
 			ppns(sel) <= ppn_from_pt;
