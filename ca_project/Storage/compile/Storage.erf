@@ -2,6 +2,4 @@ WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line break
 MESSAGE "File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd" 
 MESSAGE "Compile Entity "io"" 
 MESSAGE "Compile Architecture "behavioral" of Entity "io"" 
-WARNING DAGGEN_0002: "Process has no effect - no sequential statements." "C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd" 88 0
-WARNING DAGGEN_0001: "Process without explicit or implicit wait statement - possible infinite loop." "C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd" 88 0
-SUCCESS "Compile success 0 Errors 2 Warnings  Analysis time :  32.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

@@ -10,9 +10,9 @@ entity Fully_Associative_TLB is
 	port (
 		r_bit : in std_logic;
 		w_bit : in std_logic;
-		vpn : in std_logic_vector(8 downto 0);
-		ppn : out std_logic_vector(3 downto 0);
+		vpn : in std_logic_vector(8 downto 0); 
 		ppn_from_pt : in std_logic_vector(3 downto 0);
+		ppn : out std_logic_vector(3 downto 0);
 		hit : out std_logic
 	);
 end Fully_Associative_TLB;	

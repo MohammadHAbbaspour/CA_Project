@@ -237,4 +237,469 @@ acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
 # Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
 # Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
 # Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
-# Compile failure 22 Error
+# Compile failure 22 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (28, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (37, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (45, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (50, 2): ';' expected.
+# Error: COMP96_0015: io.vhd : (56, 1): ';' expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0207: io.vhd : (68, 2): No actual specified for local port "ph_add".
+# Error: COMP96_0078: io.vhd : (87, 10): Unknown identifier "ppn".
+# Error: COMP96_0078: io.vhd : (87, 15): Unknown identifier "write_ppn".
+# Error: COMP96_0348: io.vhd : (87, 10): Name on sensitivity list must denote a signal.
+# Error: COMP96_0348: io.vhd : (87, 15): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: io.vhd : (91, 4): Unknown identifier "physical_address".
+# Error: COMP96_0133: io.vhd : (91, 4): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (91, 24): Unknown identifier "ppn".
+# Error: COMP96_0078: io.vhd : (91, 30): Unknown identifier "page_offset".
+# Error: COMP96_0078: io.vhd : (92, 4): Unknown identifier "cach_w_bit".
+# Error: COMP96_0133: io.vhd : (92, 4): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (93, 4): Unknown identifier "cach_write_data".
+# Error: COMP96_0133: io.vhd : (93, 4): Cannot find object declaration.
+# Compile failure 13 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0078: io.vhd : (88, 10): Unknown identifier "ppn".
+# Error: COMP96_0078: io.vhd : (88, 15): Unknown identifier "write_ppn".
+# Error: COMP96_0348: io.vhd : (88, 10): Name on sensitivity list must denote a signal.
+# Error: COMP96_0348: io.vhd : (88, 15): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: io.vhd : (92, 4): Unknown identifier "physical_address".
+# Error: COMP96_0133: io.vhd : (92, 4): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (92, 24): Unknown identifier "ppn".
+# Error: COMP96_0078: io.vhd : (92, 30): Unknown identifier "page_offset".
+# Error: COMP96_0078: io.vhd : (93, 4): Unknown identifier "cach_w_bit".
+# Error: COMP96_0133: io.vhd : (93, 4): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (94, 4): Unknown identifier "cach_write_data".
+# Error: COMP96_0133: io.vhd : (94, 4): Cannot find object declaration.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Warning: DAGGEN_0002: io.vhd : (88, 0): Process has no effect - no sequential statements.
+# Warning: DAGGEN_0001: io.vhd : (88, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Compile success 0 Errors 2 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
+# Compile Entity "Fully_Associative_TLB"
+# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Error: COMP96_0018: memory.vhd : (22, 2): Identifier expected.
+# Compile Architecture "Memory_behavioral" of Entity "Memory"
+# Error: COMP96_0078: memory.vhd : (40, 4): Unknown identifier "ppnout".
+# Error: COMP96_0133: memory.vhd : (40, 4): Cannot find object declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
+# Compile Entity "Memory"
+# Compile Architecture "Memory_behavioral" of Entity "Memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0018: io.vhd : (92, 10): Identifier expected.
+# Error: COMP96_0018: io.vhd : (93, 10): Identifier expected.
+# Error: COMP96_0015: io.vhd : (95, 18): ':' expected.
+# Error: COMP96_0018: io.vhd : (95, 34): Identifier expected.
+# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
+# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
+# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
+# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (95, 18): ':' expected.
+# Error: COMP96_0018: io.vhd : (95, 34): Identifier expected.
+# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
+# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
+# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
+# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (95, 18): ':' expected.
+# Error: COMP96_0018: io.vhd : (95, 34): Identifier expected.
+# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
+# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
+# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
+# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
+# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
+# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
+# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
+# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
+# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0015: io.vhd : (182, 3): ')' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
+# Error: COMP96_0015: io.vhd : (182, 3): ')' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (182, 3): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (181, 133): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (181, 134): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0078: io.vhd : (96, 21): Unknown identifier "page".
+# Error: COMP96_0064: io.vhd : (96, 21): Unknown type.
+# Error: COMP96_0077: io.vhd : (100, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0242: io.vhd : (102, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0077: io.vhd : (105, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0242: io.vhd : (111, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (120, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (125, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (125, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (127, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (133, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0077: io.vhd : (138, 33): Undefined type of expression. Expected type 'page_type'.
+# Error: COMP96_0242: io.vhd : (140, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (147, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (151, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (151, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (153, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (163, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (172, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (174, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (174, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (174, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (179, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (181, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (181, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 26 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0077: io.vhd : (100, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0242: io.vhd : (102, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0077: io.vhd : (105, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0242: io.vhd : (111, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (120, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (125, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (125, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (127, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (133, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (140, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (147, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (151, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (151, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (153, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (163, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (172, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (174, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (174, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (174, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (179, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (181, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (181, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 23 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0242: io.vhd : (102, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (111, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (120, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (125, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (125, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (127, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (133, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (140, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (147, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (151, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (151, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (153, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (163, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (172, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (174, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (174, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (174, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (179, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (181, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (181, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 21 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0242: io.vhd : (110, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (119, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (124, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (124, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (126, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (132, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (139, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (146, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (152, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (162, 3): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0242: io.vhd : (171, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 20 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0078: io.vhd : (124, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (124, 5): Cannot find object declaration.
+# Error: COMP96_0242: io.vhd : (139, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0242: io.vhd : (139, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
+# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
+# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
+# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
+# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
+# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0138: io.vhd : (181, 63): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (182, 4): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0138: io.vhd : (182, 20): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0617: io.vhd : (182, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (184, 105): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (184, 105): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Error: COMP96_0015: io.vhd : (184, 105): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
+# Compile Entity "io"
+# Compile Architecture "behavioral" of Entity "io"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
+# Compile Entity "Storage"
+# Compile Architecture "Storage_behavioral" of Entity "Storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/my pachage.vhd
+# Compile Package "my_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
+# Comp

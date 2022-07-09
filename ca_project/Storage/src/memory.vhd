@@ -17,8 +17,8 @@ entity Memory is
 		w_bit : in std_logic; -- if equals to 0 => read from memmory and write in CACH else write from hard disk in memory
 		ph_add : in std_logic_vector(10 downto 0);
 		write_data_from_disk : in page_type;
-		read_data : out two_word_data_Type
-		
+		read_data : out two_word_data_Type;
+		ppnout: out std_logic_vector(3 downto 0)
 	);
 end Memory; 
 
@@ -36,8 +36,9 @@ begin
 		variable two_word_offset : integer;
 	begin
 		if w_bit = '1' then
-			 data(counter) <= write_data_from_disk;
-             counter <= (counter + 1) mod 13;
+			data(counter) <= write_data_from_disk;
+			ppnout <= std_logic_vector(to_unsigned(counter, 4));
+            counter <= (counter + 1) mod 13;
         end if;
 		if r_bit = '1' then
 			page_offset := ph_add(6 downto 0);

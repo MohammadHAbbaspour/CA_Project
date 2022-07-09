@@ -1,4 +1,4 @@
-135
+149
 ~E 1 "../src/cache.vhd" 8 Direct_Cach
 ~A 1 "../src/cache.vhd" 19 behavioral
 ~A 1 "../src/cache.vhd" 20 Direct_Cach_behavioral
@@ -9,6 +9,7 @@
 ~A 1 "../src/io.vhd" 13 behavioral
 ~E 1 "../src/memory.vhd" 14 Memory
 ~A 1 "../src/memory.vhd" 27 behavioral
+~A 1 "../src/memory.vhd" 27 Memory_behavioral
 ~E 1 "../src/page table.vhd" 7 PageTable
 ~A 1 "../src/page table.vhd" 21 behavioral
 ~A 1 "../src/page table.vhd" 21 PageTable_behavioral

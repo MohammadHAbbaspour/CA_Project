@@ -1,63 +1,66 @@
-timestamp=1657381757354
+timestamp=1657391722826
 
 [~A]
-ModifyID=135
+ModifyID=149
 Version=74
 
 [~MFT]
-0=7|0storage.mgf|213487|179842
-1=2|1storage.mgf|311640|186369
-3=1|3storage.mgf|83085|75440
+0=2|0storage.mgf|229699|193283
+1=2|1storage.mgf|364971|237688
+3=2|3storage.mgf|92998|85262
 
 [direct_cach]
 A/behavioral=+21|../src/cache.vhd|19|1*185095
-A/direct_cach_behavioral=A/Direct_Cach_behavioral 21|../src/cache.vhd|20|1*293915
-BinW64/direct_cach_behavioral=3*76604
+A/direct_cach_behavioral=A/Direct_Cach_behavioral 21|../src/cache.vhd|20|1*356070
+BinW64/direct_cach_behavioral=3*87693
 I=0*193489
-I/direct_cach_behavioral=I/Direct_Cach_behavioral 0*197482
+I/direct_cach_behavioral=I/Direct_Cach_behavioral 0*228240
 M=11|2|ve8|1657378237432|../src/cache.vhd|0*192984*0x0d0833765ac34231e66dc955fbb0d98df5b7e18b|0*193408*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=21|2|vef|1657375366133|../src/cache.vhd|0*89940*0x4a44664ce45176b977348f2e2001867c11fc4c41|0*91139*0x20116f55b147878295aeff36dce7fc50
-M/direct_cach_behavioral=M/Direct_Cach_behavioral 21|2|ve8|1657378263902|../src/cache.vhd|0*193769*0x6636d25e8041a2209f3839df611f728ccccd27ed|0*195020*0x20116f55b147878295aeff36dce7fc50
+M/direct_cach_behavioral=M/Direct_Cach_behavioral 21|2|ve8|1657391715584|../src/cache.vhd|0*193769*0x6636d25e8041a2209f3839df611f728ccccd27ed|0*195020*0x20116f55b147878295aeff36dce7fc50
 R=../src/cache.vhd|8
 Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|3ed6373c9d4f3a7af33446b6dda136631425eb05d63c3a7b26e1f10248d497d02263ad6a61efb9f3ae39cbdd27922562
 Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4f27d2d00bbbd5b711a3ec384435638f2
-Version/direct_cach_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|7aab34d0159a311f2b334f37415736c183b15d6d7d9193ed92e49b247f23ae699e9e2e4e71eac3b317f125b5b3e71e30
+Version/direct_cach_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|7aab34d0159a311f2b334f37415736c183b15d6d7d9193ed92e49b247f23ae69d789b5d942fff3be556f18ccfa173528
 
 [fully_associative_tlb]
 A/behavioral=+21|../src/TLB.vhd|20|1*159998
-A/tlb_behavioral=A/TLB_behavioral 21|../src/TLB.vhd|21|1*300251
-BinW64/tlb_behavioral=3*79989
-I=0*200603
-I/tlb_behavioral=I/TLB_behavioral 0*201581
-M=11|2|ve8|1657378303979|../src/TLB.vhd|0*200077*0x9cc9b8669b614dc4373d311699dfd755e3aed2cb|0*200514*0x23b75c12e3e89f2ef000564498faa8c2
+A/tlb_behavioral=A/TLB_behavioral 21|../src/TLB.vhd|21|1*360839
+BinW64/tlb_behavioral=3*91078
+I=0*214755
+I/tlb_behavioral=I/TLB_behavioral 0*228834
+M=11|2|ve8|1657383800652|../src/TLB.vhd|0*214229*0x67403537323e01ec2ee5bdb0aa5f4e8849c520e4|0*214666*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=21|2|vef|1657374013863|../src/TLB.vhd|0*95671*0xaf3c34b8acc7c11987f53572a6a871098fc6b0d8|0*96238*0x20116f55b147878295aeff36dce7fc50
-M/tlb_behavioral=M/TLB_behavioral 21|2|ve8|1657378303981|../src/TLB.vhd|0*200893*0x21e048824c58fb0a32759ff8b62554ea31021e6c|0*201474*0x20116f55b147878295aeff36dce7fc50
+M/tlb_behavioral=M/TLB_behavioral 21|2|ve8|1657391717887|../src/TLB.vhd|0*200893*0x21e048824c58fb0a32759ff8b62554ea31021e6c|0*201474*0x20116f55b147878295aeff36dce7fc50
 R=../src/TLB.vhd|9
-Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5f63d69ecd9f9c5417d10a212b9e26ec2e8c24a0477d36516826607d456281b282dc699bf3af6b920bee51f5c57fa021
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5f63d69ecd9f9c5417d10a212b9e26ec2e8c24a0477d36516826607d456281b23e8d53adedd14502da873d8c29b7ddfe
 Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4ea8c6069b1922088f72d120d280644cf
-Version/tlb_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|3eb44a780acfffae8dc52958f979e07c8f6c55f8b248e31e42d4d8329be4fdd4ecddf160de8a7ba9386dbfd25856fbb9
+Version/tlb_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|3eb44a780acfffae8dc52958f979e07c8f6c55f8b248e31e42d4d8329be4fdd4a0020f5230d2f2b49ee33e6524c1a0c0
 
 [io]
-A/behavioral=21|../src/io.vhd|13|1*311640
-BinW64/behavioral=3*83085
-I=0*210891
-I/behavioral=0*213487
-M=11|2|ve8|1657381546391|../src/io.vhd|0*210561*0xbfa3d60f01cb2104da44d4a60fe32713bdbcf2a8|0*210822*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=21|2|ve8|1657381757334|../src/io.vhd|0*211162*0x1a49caefbedddf69c4c92651bbb2056d5cbc135e|0*213404*0x20116f55b147878295aeff36dce7fc50
+A/behavioral=21|../src/io.vhd|13|1*364971
+BinW64/behavioral=3*92998
+I=0*218085
+I/behavioral=0*229699
+M=11|2|ve8|1657390517826|../src/io.vhd|0*217757*0x3bd744fd8f6484ed5d839db739b1cc2f13c3e848|0*218016*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=21|2|ve8|1657391722808|../src/io.vhd|0*223004*0xfeffddf41649bcf21fc0894bd74ffc89a743a477|0*227077*0x20116f55b147878295aeff36dce7fc50
 R=../src/io.vhd|6
-Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|6dede02343232cba332bcbfe4b5170363b0f6d8cc29f94fb3c106bba7837045d
-Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4cf848a248b4c90dceb08929a316d76bd
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|6dede02343232cba332bcbfe4b51703627835d74adcf4a9c1a62f26dd19b1601
+Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4ff1799c6cef60dcccb590ce622651df2
 
 [memory]
-A/behavioral=21|../src/memory.vhd|27|1*282645
-BinW64/behavioral=3*72955
-I=0*187630
-I/behavioral=0*188707
-M=11|2|ve8|1657378158251|../src/memory.vhd|0*187180*0x6ca574c676963762a477efafb8fe5640acca30be|0*187553*0x23b75c12e3e89f2ef000564498faa8c2
+A/behavioral=+21|../src/memory.vhd|27|1*282645
+A/memory_behavioral=A/Memory_behavioral 21|../src/memory.vhd|27|1*354058
+BinW64/memory_behavioral=3*86892
+I=0*216111
+I/memory_behavioral=I/Memory_behavioral 0*227947
+M=11|2|ve8|1657385725447|../src/memory.vhd|0*215623*0x74be2a572934801e177291ab6f1eca1f2b511827|0*216034*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=21|2|ve8|1657378158253|../src/memory.vhd|0*187905*0x64f941061c46f4b2a9e8e01b69769e08fdbc5533|0*188616*0x20116f55b147878295aeff36dce7fc50
+M/memory_behavioral=M/Memory_behavioral 21|2|ve8|1657391712372|../src/memory.vhd|0*216386*0x7033be23adbda0473363d7e6618d1b7a238c9799|0*217177*0x20116f55b147878295aeff36dce7fc50
 R=../src/memory.vhd|14
-Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|fce057f312e65ae91f0ff41fc895663339d6e37f0040c0817ac3adb88a754622
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|fce057f312e65ae91f0ff41fc8956633c4d8baccba10ccddf5bd400e3febebca
 Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff472d0a983091b3c62e998cd4a69b551d6
+Version/memory_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|a726fbce1534ff736d412a1b13f5fb20aa3ad24d74aa75e4024f79db9d2b01eb255d3382c8794b59430caf87ced8c215
 
 [my_package]
 E=1*247866
@@ -68,19 +71,19 @@ Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|823f49c35ecb285
 
 [pagetable]
 A/behavioral=21|../src/page table.vhd|21|1*301818
-A/pagetable_behavioral=A/PageTable_behavioral 21|../src/page table.vhd|21|1*304353
+A/pagetable_behavioral=A/PageTable_behavioral 21|../src/page table.vhd|21|1*362406
 BinW64/behavioral=3*80861
-BinW64/pagetable_behavioral=3*81899
+BinW64/pagetable_behavioral=3*91950
 I=0*202606
 I/behavioral=0*203508
-I/pagetable_behavioral=I/PageTable_behavioral 0*205546
+I/pagetable_behavioral=I/PageTable_behavioral 0*229139
 M=11|2|ve8|1657378330649|../src/page table.vhd|0*202111*0xd2b9343a4e59aab8da40b059bdf5f9eababd4642|0*202522*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=21|2|ve8|1657378330651|../src/page table.vhd|0*202884*0xc5397bc5548105123ae7697ffd3a275ffb7a4b26|0*203410*0x20116f55b147878295aeff36dce7fc50
-M/pagetable_behavioral=M/PageTable_behavioral 21|2|ve8|1657381088861|../src/page table.vhd|0*204882*0x4aa609204cd6cefbf3a88a0706489c02df48770c|0*205438*0x20116f55b147878295aeff36dce7fc50
+M/pagetable_behavioral=M/PageTable_behavioral 21|2|ve8|1657391719701|../src/page table.vhd|0*204882*0x4aa609204cd6cefbf3a88a0706489c02df48770c|0*205438*0x20116f55b147878295aeff36dce7fc50
 R=../src/page table.vhd|7
 Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|8da6cb2a405566a07c94f7fbf7d9111e9296125d150d3b7cc58f379c64e1550306e35bf6064fcbb84ed26634323e04f9
 Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4379f9647cd9048a38a699abb54586354
-Version/pagetable_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|9f4e52637505ddbc7ba6bac7a0337b94a535a3e31c980759b84669fb41ab970d57679d0d6d2df433073ce4c17b635db8
+Version/pagetable_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|9f4e52637505ddbc7ba6bac7a0337b94a535a3e31c980759b84669fb41ab970df494e727b8b18b53ff19bf35d7c930bc
 
 [pagetable_tb]
 I=0*114587
@@ -90,53 +93,59 @@ Version=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|b87129945e19c0a
 
 [processor]
 A/behavioral=+21|../src/processor.vhd|16|1*162790
-A/processor_behavioral=A/Processor_behavioral 21|../src/processor.vhd|17|1*303173
-BinW64/processor_behavioral=3*81574
+A/processor_behavioral=A/Processor_behavioral 21|../src/processor.vhd|17|1*363791
+BinW64/processor_behavioral=3*92673
 I=0*204381
-I/processor_behavioral=I/Processor_behavioral 0*204621
+I/processor_behavioral=I/Processor_behavioral 0*229438
 M=11|2|ve8|1657378351396|../src/processor.vhd|0*204014*0x81652e0b1193530eb687393100520065a6c1d7e1|0*204298*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=21|2|vef|1657374017274|../src/processor.vhd|0*99333*0xe19cf336d034c55123aeac0685aca95de0d05ecb|0*99726*0x20116f55b147878295aeff36dce7fc50
-M/processor_behavioral=M/Processor_behavioral 21|2|ve8|1657378351401|../src/processor.vhd|0*180729*0xca10df8fc87980c72853f6b20faf839418d48f3f|0*181171*0x20116f55b147878295aeff36dce7fc50
+M/processor_behavioral=M/Processor_behavioral 21|2|ve8|1657391721303|../src/processor.vhd|0*180729*0xca10df8fc87980c72853f6b20faf839418d48f3f|0*181171*0x20116f55b147878295aeff36dce7fc50
 R=../src/processor.vhd|8
 Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|0ba77dee7e73996b5655ae47cd2cf07e7c4c90057ca4c0d4118ab0a74744833649ab0726691951540e13d6f8fa6160da
 Version/behavioral=13.0.375.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4a869eda01d615c0ea654410bdc124c97
-Version/processor_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|b4a9f650558e6f2e783518d5fcc7558babca2ea241523121b4d9f83af65a864af79f022b41127f3582c1a959f51d1ac2
+Version/processor_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|b4a9f650558e6f2e783518d5fcc7558babca2ea241523121b4d9f83af65a864ab07752db3b9329f8a4da62daa7f94531
 
 [storage]
 A/behavioral=21|../src/hard disk.vhd|22|1*276767
-A/storage_behavioral=A/Storage_behavioral 21|../src/hard disk.vhd|21|1*305738
+A/storage_behavioral=A/Storage_behavioral 21|../src/hard disk.vhd|21|1*348156
 BinW64/behavioral=3*72501
-BinW64/storage_behavioral=3*82622
+BinW64/storage_behavioral=3*86429
 I=0*182158
 I/behavioral=0*186631
-I/storage_behavioral=I/Storage_behavioral 0*210074
+I/storage_behavioral=I/Storage_behavioral 0*227652
 M=11|2|ve8|1657378097634|../src/hard disk.vhd|0*181768*0xc58155ebfbc7a5b773028990eb8d78cecef34b9b|0*182077*0x23b75c12e3e89f2ef000564498faa8c2
 M/behavioral=21|2|ve8|1657378097636|../src/hard disk.vhd|0*182434*0xf23722cd8af746dd9d42e5b9ab71f630d025f743|0*186536*0x20116f55b147878295aeff36dce7fc50
-M/storage_behavioral=M/Storage_behavioral 21|2|ve8|1657381254300|../src/hard disk.vhd|0*205845*0x20c3ff4b2479700833071d43746cb9a2dadf1425|0*209971*0x20116f55b147878295aeff36dce7fc50
+M/storage_behavioral=M/Storage_behavioral 21|2|ve8|1657391708700|../src/hard disk.vhd|0*205845*0x20c3ff4b2479700833071d43746cb9a2dadf1425|0*209971*0x20116f55b147878295aeff36dce7fc50
 R=../src/hard disk.vhd|13
 Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|151adaf9f7f9365fc0550f9bc5b73d3f26527262ddaa47cb266f3a3c4d9b973aff2474bad67cc60f6fc908024a191548
 Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff415e4d74581af7f5f1b282ed28106cf67
-Version/storage_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|8505dd4510c5c6f01c981eecbbedf3896b07dddf55fded208f823b4d12a6b572d61e6eb891180efd2f6ed60e5035646c
+Version/storage_behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|8505dd4510c5c6f01c981eecbbedf3896b07dddf55fded208f823b4d12a6b572335e384ba7c0c7a11efd1df77e6abd41
 
 [twoway_cach]
-A/behavioral=21|../src/cache.vhd|81|1*296290
-BinW64/behavioral=3*78076
+A/behavioral=21|../src/cache.vhd|81|1*358445
+BinW64/behavioral=3*89165
 I=0*198568
-I/behavioral=0*198848
+I/behavioral=0*228543
 M=11|2|ve8|1657378263910|../src/cache.vhd|0*198063*0xf2de4f41151afd1ad9c50526452fae1acc557293|0*198487*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=21|2|ve8|1657378263915|../src/cache.vhd|0*195430*0x989f19deee03187abb31081f8903d179354a5efe|0*197096*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=21|2|ve8|1657391715595|../src/cache.vhd|0*195430*0x989f19deee03187abb31081f8903d179354a5efe|0*197096*0x20116f55b147878295aeff36dce7fc50
 R=../src/cache.vhd|69
 Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|0d65e7902646bed382f2bacf285001013751d3625f80bfa726e78ba8aa75ad3f8360a166fc4712bad97b2af82dff69fc
-Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4be3f3e78d5e304550a49f66ff04e6cf2
+Version/behavioral=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4da7d7bed4b5cac5abe93ccc1fcd37ab5
 
 [~U]
 direct_cach=Direct_Cach 11|0*192706|
-fully_associative_tlb=Fully_Associative_TLB 11|0*199827|
-io=11|0*210369|
-memory=Memory 11|0*186918|
+fully_associative_tlb=Fully_Associative_TLB 11|0*213979|
+io=11|0*217568|
+memory=Memory 11|0*215350|
 my_package=3|0*156634|0*156976
 pagetable=PageTable 11|0*201886|
 pagetable_tb=11|0*114165|
 processor=Processor 11|0*203797|
 storage=Storage 11|0*181539|
 twoway_cach=TwoWay_Cach 11|0*197785|
+
+
+
+
+
+
