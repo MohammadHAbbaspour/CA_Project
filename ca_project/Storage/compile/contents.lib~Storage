@@ -1,4 +1,4 @@
-54
+64
 ~E 1 "../src/cache.vhd" 8 Direct_Cach
 ~A 1 "../src/cache.vhd" 19 behavioral
 ~E 1 "../src/TLB.vhd" 9 Fully_Associative_TLB
