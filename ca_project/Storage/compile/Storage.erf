@@ -1,5 +1,7 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd" 
-MESSAGE "Compile Entity "PageTable"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "PageTable"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 
+MESSAGE "File: F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd" 
+MESSAGE "Compile Entity "io"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "io"" 
+ERROR COMP96_0207: "No actual specified for local port "r_bit"." "F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd" 44 2
+ERROR COMP96_0207: "No actual specified for local port "r_bit"." "F:/CA/Project/CA_Project/ca_project/storage/src/io.vhd" 50 2
+FAILURE "Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

@@ -19,7 +19,7 @@ FAMILY=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=io|behavioral|0
 ShowHide=ShowTopLevel
 Selected=
 [Files]
@@ -31,8 +31,6 @@ Selected=
 /page table.vhd=-1
 /processor.vhd=-1
 /io.vhd=-1
-TestBench/pagetable_TB.vhd=-1
-TestBench/pagetable_TB_runtest.do=-1
 [Files.Data]
 .\src\hard disk.vhd=VHDL Source Code
 .\src\my pachage.vhd=VHDL Source Code
@@ -42,7 +40,3 @@ TestBench/pagetable_TB_runtest.do=-1
 .\src\page table.vhd=VHDL Source Code
 .\src\processor.vhd=VHDL Source Code
 .\src\io.vhd=VHDL Source Code
-.\src\TestBench\pagetable_TB.vhd=VHDL Test Bench
-.\src\TestBench\pagetable_TB_runtest.do=Macro
-[Groups]
-TestBench=1

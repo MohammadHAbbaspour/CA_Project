@@ -10,7 +10,8 @@ entity PageTable is
     vpn : in std_logic_vector(8 downto 0);
     write_ppn : in std_logic_vector(3 downto 0);
     read_ppn : out std_logic_vector(3 downto 0);
-    hit : out std_logic
+    hit : out std_logic;
+	r_bit : in std_logic
   );
 end PageTable; 
 

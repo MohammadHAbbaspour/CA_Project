@@ -11,12 +11,13 @@ entity Direct_Cach is
 		hit : out std_logic;
 		read_data : out std_logic_vector(7 downto 0);
 		w_bit : in std_logic;
-		write_data_from_memory : in two_word_data_Type
+		write_data_from_memory : in two_word_data_Type;
+		r_bit : in std_logic
 	);
 end Direct_Cach;  
 
 
-architecture behavioral of Direct_Cach is
+architecture Direct_Cach_behavioral of Direct_Cach is
 signal valid : std_logic_vector(31 downto 0) := (others => '0');
 signal cach_data : cach_data_blocks_type := (others => (others => (others => '0')));	 
 signal tags : tag_data_type := (others => (others => '0'));
@@ -53,7 +54,7 @@ begin
 		end if;
 	end process;
 	
-end	behavioral;	 
+end	Direct_Cach_behavioral;	 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -70,7 +71,8 @@ entity TwoWay_Cach is
 		hit : out std_logic;
 		read_data : out std_logic_vector(7 downto 0);
 		w_bit : in std_logic;
-		write_data_from_memory : in two_word_data_Type
+		write_data_from_memory : in two_word_data_Type;
+		r_bit : in std_logic
 	);
 end TwoWay_Cach;  
 

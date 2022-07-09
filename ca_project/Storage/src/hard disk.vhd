@@ -13,7 +13,8 @@ use work.my_package.all;
 entity Storage is 	
 	port (
 		storage_add : in std_logic_vector(8 downto 0);   	-- referes to OS Fault Handler
-		page : out page_type 								-- every data size is 2 word = 2(16) bit => every page has 32 words
+		page : out page_type; 								-- every data size is 2 word = 2(16) bit => every page has 32 words
+		r_bit : in std_logic
 	);
 end Storage;	  
 

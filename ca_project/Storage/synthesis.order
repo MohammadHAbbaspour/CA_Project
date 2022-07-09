@@ -6,4 +6,3 @@ i<>.\src\TLB.vhd
 i<>.\src\page table.vhd
 i<>.\src\processor.vhd
 i<>.\src\io.vhd
-i<>.\src\TestBench\pagetable_TB.vhd

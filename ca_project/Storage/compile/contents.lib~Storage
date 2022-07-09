@@ -1,16 +1,21 @@
-68
+113
 ~E 1 "../src/cache.vhd" 8 Direct_Cach
 ~A 1 "../src/cache.vhd" 19 behavioral
+~A 1 "../src/cache.vhd" 20 Direct_Cach_behavioral
 ~E 1 "../src/TLB.vhd" 9 Fully_Associative_TLB
 ~A 1 "../src/TLB.vhd" 20 behavioral
+~A 1 "../src/TLB.vhd" 21 TLB_behavioral
 ~E 1 "../src/io.vhd" 6 io
+~A 1 "../src/io.vhd" 13 behavioral
 ~E 1 "../src/memory.vhd" 14 Memory
-~A 1 "../src/memory.vhd" 25 behavioral
+~A 1 "../src/memory.vhd" 26 behavioral
 ~E 1 "../src/page table.vhd" 7 PageTable
-~A 1 "../src/page table.vhd" 19 behavioral
+~A 1 "../src/page table.vhd" 20 behavioral
+~E 1 "../src/TestBench/pagetable_TB.vhd" 6 pagetable_tb
 ~E 1 "../src/processor.vhd" 8 Processor
 ~A 1 "../src/processor.vhd" 16 behavioral
+~A 1 "../src/processor.vhd" 17 Processor_behavioral
 ~E 1 "../src/hard disk.vhd" 13 Storage
-~A 1 "../src/hard disk.vhd" 20 behavioral
-~E 1 "../src/cache.vhd" 67 TwoWay_Cach
-~A 1 "../src/cache.vhd" 78 behavioral
+~A 1 "../src/hard disk.vhd" 21 behavioral
+~E 1 "../src/cache.vhd" 68 TwoWay_Cach
+~A 1 "../src/cache.vhd" 80 behavioral

@@ -16,7 +16,8 @@ entity Memory is
 		w_bit : in std_logic; -- if equals to 0 => read from memmory and write in CACH else write from hard disk in memory
 		ph_add : in std_logic_vector(10 downto 0);
 		write_data_from_disk : in page_type;
-		read_data : out two_word_data_Type
+		read_data : out two_word_data_Type;
+		r_bit : in std_logic
 	);
 end Memory; 
 

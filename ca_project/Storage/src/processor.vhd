@@ -8,12 +8,13 @@ use ieee.std_logic_1164.all;
 entity Processor is 
 	port (
 	index : in integer;
-	vr_add : out std_logic_vector(15 downto 0)
+	vr_add : out std_logic_vector(15 downto 0);
+	r_bit : in std_logic
 	);
 end Processor;	  
 
 
-architecture behavioral of Processor is
+architecture Processor_behavioral of Processor is
 begin  
 	process (index)
 	is	
@@ -25,5 +26,5 @@ begin
 	begin
 		vr_add <= v_addrs(index);				   
 	end process;
-end	behavioral;
+end	Processor_behavioral;
 ------------------------------------------------------------------------------------------------------------------------
