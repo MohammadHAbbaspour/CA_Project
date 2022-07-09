@@ -6,7 +6,7 @@ use work.my_package.all;
 
 entity PageTable is
   port (
-    w_bit : in std_logic; -- if equals to 0 => read from memmory and write in CACH else write from hard disk in memory
+    w_bit : in std_logic;
     vpn : in std_logic_vector(8 downto 0);
     write_ppn : in std_logic_vector(3 downto 0);
     read_ppn : out std_logic_vector(3 downto 0);
