@@ -8,7 +8,7 @@ use work.my_package.all;
 ------------------------------------------------------ design of Direct Map Cach -----------------------------------------------------------
 entity Direct_Cach is
 	port (
-		ph_add : in std_logic_vector(10 downto 0);
+		ph_add : inout std_logic_vector(10 downto 0);
 		hit : out std_logic;
 		read_data : out std_logic_vector(7 downto 0);
 		w_bit : in std_logic;
