@@ -3,6 +3,7 @@ comp -include "$dsn\src\page table.vhd"
 comp -include "$dsn\src\TestBench\pagetable_TB.vhd" 
 asim +access +r TESTBENCH_FOR_pagetable 
 wave 
+wave -noreg r_bit
 wave -noreg w_bit
 wave -noreg vpn
 wave -noreg write_ppn

@@ -6,3 +6,9 @@ i<>.\src\TLB.vhd
 i<>.\src\page table.vhd
 i<>.\src\processor.vhd
 i<>.\src\io.vhd
+i<>.\src\TestBench\processor_TB.vhd
+i<>.\src\TestBench\storage_TB.vhd
+i<>.\src\TestBench\memory_TB.vhd
+i<>.\src\TestBench\direct_cach_TB.vhd
+i<>.\src\TestBench\pagetable_TB.vhd
+i<>.\src\TestBench\fully_associative_tlb_TB.vhd

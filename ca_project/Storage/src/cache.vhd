@@ -84,7 +84,7 @@ signal cach_data : cache2setarray := (others => (others => (others => (others =>
 signal tags : tag2setarray := (others => (others => (others => '0'))); 
 signal sel: std_logic := '1';
 begin
-	process (ph_add)
+	process (r_bit, w_bit)
 	is
 		variable byte_offset : std_logic_vector(1 downto 0) := ph_add(1 downto 0);
 		variable word_offset : std_logic := ph_add(2);
@@ -124,5 +124,7 @@ begin
 			sel <= not(sel);
 		end if;
 	end process;
+	
+	
 	
 end	behavioral;

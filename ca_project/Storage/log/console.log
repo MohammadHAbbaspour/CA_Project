@@ -1,705 +1,2151 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'behavioral' of entity 'io' not found in library 'storage'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Error: VLM_0030: hard disk.vhd : (5, 10): Package "storage.my_package" must be recompiled because package "ieee.NUMERIC_STD" has changed.
-# Error: COMP96_0078: hard disk.vhd : (16, 14): Unknown identifier "page_type".
-# Error: COMP96_0064: hard disk.vhd : (16, 14): Unknown type.
-# Compile Architecture "behavioral" of Entity "Storage"
-# Error: VLM_0009: hard disk.vhd : (21, 1): Entity "storage.Storage" must be recompiled because package "ieee.NUMERIC_STD" has changed.
-# Error: COMP96_0056: hard disk.vhd : (21, 1): Cannot find referenced entity declaration "Storage".
-# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/my pachage.vhd
-# Compile Package "my_package"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:29 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:30 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
 # Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=4999 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:30 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
-# Compile Entity "Memory"
-# Compile Architecture "behavioral" of Entity "Memory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Warning: DAGGEN_0001: TestBench/processor_TB.vhd : (41, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:32 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:32 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:33 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:34 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:35 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:41 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:42 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:44 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:45 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 2517490200 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/processor_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+processor_tb processor_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5566 kB (elbread=427 elab2=5000 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:46 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/processor_tb/r_bit}
+# add wave -noreg {/processor_tb/index}
+# add wave -noreg {/processor_tb/vr_add}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.storage" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/hard disk.vhd".
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.storage" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/hard disk.vhd".
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Error: COMP96_0029: TestBench/storage_TB.vhd : (44, 18): Expression expected.
+# Error: COMP96_0029: TestBench/storage_TB.vhd : (46, 18): Expression expected.
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Error: COMP96_0029: TestBench/storage_TB.vhd : (44, 18): Expression expected.
+# Error: COMP96_0029: TestBench/storage_TB.vhd : (46, 18): Expression expected.
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+storage_tb storage_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 2,  TOP instance.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5571 kB (elbread=427 elab2=5005 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:53 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/storage_tb/r_bit}
+# add wave -noreg {/storage_tb/storage_add}
+# add wave -noreg {/storage_tb/page}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+storage_tb storage_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5571 kB (elbread=427 elab2=5005 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:54 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/storage_tb/r_bit}
+# add wave -noreg {/storage_tb/storage_add}
+# add wave -noreg {/storage_tb/page}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+storage_tb storage_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5571 kB (elbread=427 elab2=5005 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:56 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/storage_tb/r_bit}
+# add wave -noreg {/storage_tb/storage_add}
+# add wave -noreg {/storage_tb/page}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+storage_tb storage_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5571 kB (elbread=427 elab2=5005 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:57 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/storage_tb/r_bit}
+# add wave -noreg {/storage_tb/storage_add}
+# add wave -noreg {/storage_tb/page}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+storage_tb storage_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5571 kB (elbread=427 elab2=5005 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:58 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/storage_tb/r_bit}
+# add wave -noreg {/storage_tb/storage_add}
+# add wave -noreg {/storage_tb/page}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/storage_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/storage_TB.vhd
+# Compile Entity "storage_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "storage_tb"
+# Compile Configuration "TESTBENCH_FOR_storage"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+storage_tb storage_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5572 kB (elbread=427 elab2=5005 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  1:59 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/storage_tb/r_bit}
+# add wave -noreg {/storage_tb/storage_add}
+# add wave -noreg {/storage_tb/page}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.memory" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/memory.vhd".
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.memory" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/memory.vhd".
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.memory" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/memory.vhd".
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/memory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/memory_TB.vhd
+# Compile Entity "memory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memory_tb"
+# Compile Configuration "TESTBENCH_FOR_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.storage" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/hard disk.vhd".
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/memory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/memory_TB.vhd
+# Compile Entity "memory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memory_tb"
+# Compile Configuration "TESTBENCH_FOR_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+memory_tb memory_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=427 elab2=5031 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:08 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/memory_tb/r_bit}
+# add wave -noreg {/memory_tb/w_bit}
+# add wave -noreg {/memory_tb/ph_add}
+# add wave -noreg {/memory_tb/write_data_from_disk}
+# add wave -noreg {/memory_tb/read_data}
+# add wave -noreg {/memory_tb/ppnout}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/memory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/memory_TB.vhd
+# Compile Entity "memory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memory_tb"
+# Compile Configuration "TESTBENCH_FOR_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+memory_tb memory_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5598 kB (elbread=427 elab2=5032 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:09 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/memory_tb/r_bit}
+# add wave -noreg {/memory_tb/w_bit}
+# add wave -noreg {/memory_tb/ph_add}
+# add wave -noreg {/memory_tb/write_data_from_disk}
+# add wave -noreg {/memory_tb/read_data}
+# add wave -noreg {/memory_tb/ppnout}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/memory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/memory_TB.vhd
+# Compile Entity "memory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memory_tb"
+# Compile Configuration "TESTBENCH_FOR_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+memory_tb memory_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5598 kB (elbread=427 elab2=5032 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:12 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/memory_tb/r_bit}
+# add wave -noreg {/memory_tb/w_bit}
+# add wave -noreg {/memory_tb/ph_add}
+# add wave -noreg {/memory_tb/write_data_from_disk}
+# add wave -noreg {/memory_tb/read_data}
+# add wave -noreg {/memory_tb/ppnout}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/memory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/memory_TB.vhd
+# Compile Entity "memory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memory_tb"
+# Compile Configuration "TESTBENCH_FOR_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+memory_tb memory_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5598 kB (elbread=427 elab2=5032 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:14 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/memory_tb/r_bit}
+# add wave -noreg {/memory_tb/w_bit}
+# add wave -noreg {/memory_tb/ph_add}
+# add wave -noreg {/memory_tb/write_data_from_disk}
+# add wave -noreg {/memory_tb/read_data}
+# add wave -noreg {/memory_tb/ppnout}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/memory_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/memory_TB.vhd
+# Compile Entity "memory_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "memory_tb"
+# Compile Configuration "TESTBENCH_FOR_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+memory_tb memory_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5598 kB (elbread=427 elab2=5032 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:15 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/memory_tb/r_bit}
+# add wave -noreg {/memory_tb/w_bit}
+# add wave -noreg {/memory_tb/ph_add}
+# add wave -noreg {/memory_tb/write_data_from_disk}
+# add wave -noreg {/memory_tb/read_data}
+# add wave -noreg {/memory_tb/ppnout}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.direct_cach" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/cache.vhd".
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.direct_cach" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/cache.vhd".
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:23 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:25 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5576 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:26 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5576 kB (elbread=427 elab2=5010 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:28 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5576 kB (elbread=427 elab2=5010 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:28 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5576 kB (elbread=427 elab2=5010 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:30 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5576 kB (elbread=427 elab2=5010 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:33 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 600 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:35 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:36 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
 acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
 # Compile Entity "Direct_Cach"
 # Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
 # Compile Entity "TwoWay_Cach"
 # Compile Architecture "behavioral" of Entity "TwoWay_Cach"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Error: COMP96_0015: cache.vhd : (87, 18): ')' expected.
+# Error: COMP96_0019: cache.vhd : (87, 18): Keyword 'begin' expected.
+# Error: COMP96_0019: cache.vhd : (90, 3): Keyword 'end' expected.
+# Error: COMP96_0016: cache.vhd : (90, 12): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
+# Compile Entity "Direct_Cach"
+# Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
+# Compile Entity "TwoWay_Cach"
+# Compile Architecture "behavioral" of Entity "TwoWay_Cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:38 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:38 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
 # Compile Entity "Direct_Cach"
 # Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
 # Compile Entity "TwoWay_Cach"
 # Compile Architecture "behavioral" of Entity "TwoWay_Cach"
 # Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd
-# Compile Entity "PageTable"
-# Compile Architecture "behavioral" of Entity "PageTable"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
-# Compile Entity "Fully_Associative_TLB"
-# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/processor.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/processor.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Processor_behavioral" of Entity "Processor"
-# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/my pachage.vhd
-# Compile Package "my_package"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
-# Compile Entity "Memory"
-# Compile Architecture "behavioral" of Entity "Memory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:41 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
 acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
-# Compile Entity "Direct_Cach"
-# Error: COMP96_0018: cache.vhd : (17, 2): Identifier expected.
-# Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
-# Compile Entity "TwoWay_Cach"
-# Compile Architecture "behavioral" of Entity "TwoWay_Cach"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
 # Compile Entity "Direct_Cach"
 # Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
 # Compile Entity "TwoWay_Cach"
 # Compile Architecture "behavioral" of Entity "TwoWay_Cach"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/cache.vhd
-# Compile Entity "Direct_Cach"
-# Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
-# Compile Entity "TwoWay_Cach"
-# Compile Architecture "behavioral" of Entity "TwoWay_Cach"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
-# Compile Entity "Fully_Associative_TLB"
-# Error: COMP96_0018: TLB.vhd : (18, 2): Identifier expected.
-# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
-# Compile Entity "Fully_Associative_TLB"
-# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd
-# Compile Entity "PageTable"
-# Compile Architecture "behavioral" of Entity "PageTable"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/processor.vhd
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:42 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/processor.vhd
-# Compile Entity "Processor"
-# Compile Architecture "Processor_behavioral" of Entity "Processor"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/page table.vhd"
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:50 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:51 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.pagetable" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/page table.vhd".
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.pagetable" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/page table.vhd".
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/pagetable_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/page table.vhd
-# Compile Entity "PageTable"
-# Compile Architecture "PageTable_behavioral" of Entity "PageTable"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/pagetable_TB.vhd
+# Compile Entity "pagetable_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pagetable_tb"
+# Compile Configuration "TESTBENCH_FOR_pagetable"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+pagetable_tb pagetable_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5573 kB (elbread=427 elab2=5006 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:58 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/pagetable_tb/r_bit}
+# add wave -noreg {/pagetable_tb/w_bit}
+# add wave -noreg {/pagetable_tb/vpn}
+# add wave -noreg {/pagetable_tb/write_ppn}
+# add wave -noreg {/pagetable_tb/read_ppn}
+# add wave -noreg {/pagetable_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/pagetable_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "Storage_behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/pagetable_TB.vhd
+# Compile Entity "pagetable_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "pagetable_tb"
+# Compile Configuration "TESTBENCH_FOR_pagetable"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+pagetable_tb pagetable_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5573 kB (elbread=427 elab2=5007 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  2:59 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/pagetable_tb/r_bit}
+# add wave -noreg {/pagetable_tb/w_bit}
+# add wave -noreg {/pagetable_tb/vpn}
+# add wave -noreg {/pagetable_tb/write_ppn}
+# add wave -noreg {/pagetable_tb/read_ppn}
+# add wave -noreg {/pagetable_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.fully_associative_tlb" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/TLB.vhd".
+# ULM: Warning: ULM_0021 Architecture "behavioral" of entity "storage.fully_associative_tlb" is not up-to-date. Please recompile file "F:\CA\Project\CA_Project\ca_project\storage/src/TLB.vhd".
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/fully_associative_tlb_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
-# Error: COMP96_0018: io.vhd : (19, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (20, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (21, 19): Identifier expected.
-# Error: COMP96_0018: io.vhd : (22, 19): Identifier expected.
-# Error: COMP96_0018: io.vhd : (23, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (24, 19): Identifier expected.
-# Error: COMP96_0018: io.vhd : (28, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (29, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (30, 24): Identifier expected.
-# Error: COMP96_0018: io.vhd : (31, 40): Identifier expected.
-# Error: COMP96_0018: io.vhd : (32, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (33, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (37, 20): Identifier expected.
-# Error: COMP96_0018: io.vhd : (38, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (39, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (40, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (41, 26): Identifier expected.
-# Error: COMP96_0018: io.vhd : (42, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (45, 22): Identifier expected.
-# Error: COMP96_0018: io.vhd : (46, 28): Identifier expected.
-# Error: COMP96_0018: io.vhd : (47, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (50, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (51, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
-# Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
-# Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
-# Compile failure 27 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (28, 2): ';' expected.
-# Error: COMP96_0018: io.vhd : (28, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (29, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (30, 24): Identifier expected.
-# Error: COMP96_0018: io.vhd : (31, 40): Identifier expected.
-# Error: COMP96_0018: io.vhd : (32, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (33, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (37, 20): Identifier expected.
-# Error: COMP96_0018: io.vhd : (38, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (39, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (40, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (41, 26): Identifier expected.
-# Error: COMP96_0018: io.vhd : (42, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (45, 22): Identifier expected.
-# Error: COMP96_0018: io.vhd : (46, 28): Identifier expected.
-# Error: COMP96_0018: io.vhd : (47, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (50, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (51, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
-# Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
-# Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
-# Compile failure 22 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (28, 2): ';' expected.
-# Error: COMP96_0018: io.vhd : (28, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (29, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (30, 24): Identifier expected.
-# Error: COMP96_0018: io.vhd : (31, 40): Identifier expected.
-# Error: COMP96_0018: io.vhd : (32, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (33, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (37, 20): Identifier expected.
-# Error: COMP96_0018: io.vhd : (38, 23): Identifier expected.
-# Error: COMP96_0018: io.vhd : (39, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (40, 27): Identifier expected.
-# Error: COMP96_0018: io.vhd : (41, 26): Identifier expected.
-# Error: COMP96_0018: io.vhd : (42, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (45, 22): Identifier expected.
-# Error: COMP96_0018: io.vhd : (46, 28): Identifier expected.
-# Error: COMP96_0018: io.vhd : (47, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (50, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (51, 21): Identifier expected.
-# Error: COMP96_0018: io.vhd : (52, 22): Identifier expected.
-# Error: COMP96_0018: io.vhd : (53, 36): Identifier expected.
-# Error: COMP96_0018: io.vhd : (54, 25): Identifier expected.
-# Compile failure 22 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (19, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (28, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (37, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (45, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (50, 2): ';' expected.
-# Error: COMP96_0015: io.vhd : (56, 1): ';' expected.
-# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0207: io.vhd : (68, 2): No actual specified for local port "ph_add".
-# Error: COMP96_0078: io.vhd : (87, 10): Unknown identifier "ppn".
-# Error: COMP96_0078: io.vhd : (87, 15): Unknown identifier "write_ppn".
-# Error: COMP96_0348: io.vhd : (87, 10): Name on sensitivity list must denote a signal.
-# Error: COMP96_0348: io.vhd : (87, 15): Name on sensitivity list must denote a signal.
-# Error: COMP96_0078: io.vhd : (91, 4): Unknown identifier "physical_address".
-# Error: COMP96_0133: io.vhd : (91, 4): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (91, 24): Unknown identifier "ppn".
-# Error: COMP96_0078: io.vhd : (91, 30): Unknown identifier "page_offset".
-# Error: COMP96_0078: io.vhd : (92, 4): Unknown identifier "cach_w_bit".
-# Error: COMP96_0133: io.vhd : (92, 4): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (93, 4): Unknown identifier "cach_write_data".
-# Error: COMP96_0133: io.vhd : (93, 4): Cannot find object declaration.
-# Compile failure 13 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0078: io.vhd : (88, 10): Unknown identifier "ppn".
-# Error: COMP96_0078: io.vhd : (88, 15): Unknown identifier "write_ppn".
-# Error: COMP96_0348: io.vhd : (88, 10): Name on sensitivity list must denote a signal.
-# Error: COMP96_0348: io.vhd : (88, 15): Name on sensitivity list must denote a signal.
-# Error: COMP96_0078: io.vhd : (92, 4): Unknown identifier "physical_address".
-# Error: COMP96_0133: io.vhd : (92, 4): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (92, 24): Unknown identifier "ppn".
-# Error: COMP96_0078: io.vhd : (92, 30): Unknown identifier "page_offset".
-# Error: COMP96_0078: io.vhd : (93, 4): Unknown identifier "cach_w_bit".
-# Error: COMP96_0133: io.vhd : (93, 4): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (94, 4): Unknown identifier "cach_write_data".
-# Error: COMP96_0133: io.vhd : (94, 4): Cannot find object declaration.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Warning: DAGGEN_0002: io.vhd : (88, 0): Process has no effect - no sequential statements.
-# Warning: DAGGEN_0001: io.vhd : (88, 0): Process without explicit or implicit wait statement - possible infinite loop.
-# Compile success 0 Errors 2 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/TLB.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/TLB.vhd
-# Compile Entity "Fully_Associative_TLB"
-# Compile Architecture "TLB_behavioral" of Entity "Fully_Associative_TLB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
-# Compile Entity "Memory"
-# Error: COMP96_0018: memory.vhd : (22, 2): Identifier expected.
-# Compile Architecture "Memory_behavioral" of Entity "Memory"
-# Error: COMP96_0078: memory.vhd : (40, 4): Unknown identifier "ppnout".
-# Error: COMP96_0133: memory.vhd : (40, 4): Cannot find object declaration.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/memory.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/memory.vhd
-# Compile Entity "Memory"
-# Compile Architecture "Memory_behavioral" of Entity "Memory"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0018: io.vhd : (92, 10): Identifier expected.
-# Error: COMP96_0018: io.vhd : (93, 10): Identifier expected.
-# Error: COMP96_0015: io.vhd : (95, 18): ':' expected.
-# Error: COMP96_0018: io.vhd : (95, 34): Identifier expected.
-# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
-# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
-# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
-# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (95, 18): ':' expected.
-# Error: COMP96_0018: io.vhd : (95, 34): Identifier expected.
-# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
-# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
-# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
-# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
-# Compile failure 10 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (95, 18): ':' expected.
-# Error: COMP96_0018: io.vhd : (95, 34): Identifier expected.
-# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
-# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
-# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
-# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
-# Compile failure 10 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (113, 3): ';' expected.
-# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
-# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
-# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
-# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0019: io.vhd : (122, 19): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (129, 22): Keyword 'then' expected.
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0019: io.vhd : (155, 8): Keyword 'process' expected.
-# Error: COMP96_0015: io.vhd : (156, 7): ';' expected.
-# Error: COMP96_0016: io.vhd : (156, 9): Design unit declaration expected.
-# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (125, 5): ';' expected.
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0015: io.vhd : (182, 3): ')' expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (151, 5): ';' expected.
-# Error: COMP96_0015: io.vhd : (182, 3): ')' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (182, 3): ')' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (181, 133): ')' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (181, 134): ')' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0078: io.vhd : (96, 21): Unknown identifier "page".
-# Error: COMP96_0064: io.vhd : (96, 21): Unknown type.
-# Error: COMP96_0077: io.vhd : (100, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0242: io.vhd : (102, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0077: io.vhd : (105, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0242: io.vhd : (111, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (120, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (125, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (125, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (127, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (133, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0077: io.vhd : (138, 33): Undefined type of expression. Expected type 'page_type'.
-# Error: COMP96_0242: io.vhd : (140, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (147, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (151, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (151, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (153, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (163, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (172, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (174, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (174, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (174, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (179, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (181, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (181, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 26 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0077: io.vhd : (100, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0242: io.vhd : (102, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0077: io.vhd : (105, 17): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0242: io.vhd : (111, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (120, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (125, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (125, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (127, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (133, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (140, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (147, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (151, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (151, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (153, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (163, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (172, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (174, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (174, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (174, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (179, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (181, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (181, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 23 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0242: io.vhd : (102, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (111, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (120, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (125, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (125, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (127, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (133, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (140, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (147, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (151, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (151, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (153, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (163, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (172, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (174, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (174, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (174, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (179, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (181, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (181, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 21 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0242: io.vhd : (110, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (119, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (124, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (124, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (126, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (132, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (139, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (146, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (152, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (162, 3): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0242: io.vhd : (171, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 20 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0078: io.vhd : (124, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (124, 5): Cannot find object declaration.
-# Error: COMP96_0242: io.vhd : (139, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0242: io.vhd : (139, 5): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 10 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0078: io.vhd : (150, 5): Unknown identifier "tlb_ppn_ftom_pt".
-# Error: COMP96_0133: io.vhd : (150, 5): Cannot find object declaration.
-# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 9 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0078: io.vhd : (173, 15): Unknown identifier "read_data".
-# Error: COMP96_0133: io.vhd : (173, 15): Cannot find object declaration.
-# Error: COMP96_0077: io.vhd : (173, 15): Undefined type of expression. Expected type 'two_word_data_Type'.
-# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 7 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0242: io.vhd : (178, 4): Wait statement in process with explicit sensitivity list is not allowed.
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/fully_associative_tlb_TB.vhd
+# Compile Entity "fully_associative_tlb_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "fully_associative_tlb_tb"
+# Error: COMP96_0015: TestBench/fully_associative_tlb_TB.vhd : (60, 3): ';' expected.
+# Error: COMP96_0015: TestBench/fully_associative_tlb_TB.vhd : (65, 3): ';' expected.
+# Error: COMP96_0015: TestBench/fully_associative_tlb_TB.vhd : (70, 3): ';' expected.
+# Compile Configuration "TESTBENCH_FOR_fully_associative_tlb"
+# Error: COMP96_0209: TestBench/fully_associative_tlb_TB.vhd : (77, 6): Unknown architecture name used in configuration declaration.
 # Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/fully_associative_tlb_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0138: io.vhd : (180, 23): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0138: io.vhd : (180, 34): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (180, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/fully_associative_tlb_TB.vhd
+# Compile Entity "fully_associative_tlb_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "fully_associative_tlb_tb"
+# Compile Configuration "TESTBENCH_FOR_fully_associative_tlb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.5 [s].
+asim -O5 +access +r +m+fully_associative_tlb_tb fully_associative_tlb_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5569 kB (elbread=427 elab2=5003 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  3:04 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/fully_associative_tlb_tb/r_bit}
+# add wave -noreg {/fully_associative_tlb_tb/w_bit}
+# add wave -noreg {/fully_associative_tlb_tb/vpn}
+# add wave -noreg {/fully_associative_tlb_tb/ppn_from_pt}
+# add wave -noreg {/fully_associative_tlb_tb/ppn}
+# add wave -noreg {/fully_associative_tlb_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work storage -2002  $dsn/src/cache.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0138: io.vhd : (181, 63): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (181, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/cache.vhd
+# Compile Entity "Direct_Cach"
+# Compile Architecture "Direct_Cach_behavioral" of Entity "Direct_Cach"
+# Compile Entity "TwoWay_Cach"
+# Compile Architecture "behavioral" of Entity "TwoWay_Cach"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work storage -2002  $dsn/src/TestBench/direct_cach_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (182, 4): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0138: io.vhd : (182, 20): The index types in the reference to the array object are incompatible with its range type.
-# Error: COMP96_0617: io.vhd : (182, 15): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC' to 'STD_LOGIC_VECTOR'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (184, 105): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (184, 105): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Error: COMP96_0015: io.vhd : (184, 105): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  $dsn/src/io.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/io.vhd
-# Compile Entity "io"
-# Compile Architecture "behavioral" of Entity "io"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Compile Entity "Storage"
-# Compile Architecture "Storage_behavioral" of Entity "Storage"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/my pachage.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/my pachage.vhd
-# Compile Package "my_package"
+# File: F:/CA/Project/CA_Project/ca_project/storage/src/TestBench/direct_cach_TB.vhd
+# Compile Entity "direct_cach_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "direct_cach_tb"
+# Compile Configuration "TESTBENCH_FOR_direct_cach"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work storage -2002  "$dsn/src/hard disk.vhd"
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/dsool/Desktop/freedome/CA_Project/ca_project/storage/src/hard disk.vhd
-# Comp
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+direct_cach_tb direct_cach_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location F:\CA\Project\CA_Project\ca_project\storage\src\wave.asdb
+#  3:08 AM, Sunday, July 10, 2022
+#  Simulation has been initialized
+# add wave -noreg {/direct_cach_tb/r_bit}
+# add wave -noreg {/direct_cach_tb/w_bit}
+# add wave -noreg {/direct_cach_tb/ph_add}
+# add wave -noreg {/direct_cach_tb/write_data_from_memory}
+# add wave -noreg {/direct_cach_tb/read_data}
+# add wave -noreg {/direct_cach_tb/hit}
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'F:/CA/Project/CA_Project/ca_project/storage/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 200 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 400 ns,  Iteration: 1,  Instance: /direct_cach_tb/UUT,  Process: line__25.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

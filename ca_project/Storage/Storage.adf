@@ -19,7 +19,7 @@ FAMILY=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=io|behavioral|0
+HierarchyInformation=direct_cach_tb|TB_ARCHITECTURE|0 fully_associative_tlb_tb|TB_ARCHITECTURE|0 memory_tb|TB_ARCHITECTURE|0 pagetable_tb|TB_ARCHITECTURE|0 processor_tb|TB_ARCHITECTURE|0 storage_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 [Files]
@@ -31,6 +31,18 @@ Selected=
 /page table.vhd=-1
 /processor.vhd=-1
 /io.vhd=-1
+TestBench/processor_TB.vhd=-1
+TestBench/processor_TB_runtest.do=-1
+TestBench/storage_TB.vhd=-1
+TestBench/storage_TB_runtest.do=-1
+TestBench/memory_TB.vhd=-1
+TestBench/memory_TB_runtest.do=-1
+TestBench/direct_cach_TB.vhd=-1
+TestBench/direct_cach_TB_runtest.do=-1
+TestBench/pagetable_TB.vhd=-1
+TestBench/pagetable_TB_runtest.do=-1
+TestBench/fully_associative_tlb_TB.vhd=-1
+TestBench/fully_associative_tlb_TB_runtest.do=-1
 [Files.Data]
 .\src\hard disk.vhd=VHDL Source Code
 .\src\my pachage.vhd=VHDL Source Code
@@ -40,3 +52,17 @@ Selected=
 .\src\page table.vhd=VHDL Source Code
 .\src\processor.vhd=VHDL Source Code
 .\src\io.vhd=VHDL Source Code
+.\src\TestBench\processor_TB.vhd=VHDL Test Bench
+.\src\TestBench\processor_TB_runtest.do=Macro
+.\src\TestBench\storage_TB.vhd=VHDL Test Bench
+.\src\TestBench\storage_TB_runtest.do=Macro
+.\src\TestBench\memory_TB.vhd=VHDL Test Bench
+.\src\TestBench\memory_TB_runtest.do=Macro
+.\src\TestBench\direct_cach_TB.vhd=VHDL Test Bench
+.\src\TestBench\direct_cach_TB_runtest.do=Macro
+.\src\TestBench\pagetable_TB.vhd=VHDL Test Bench
+.\src\TestBench\pagetable_TB_runtest.do=Macro
+.\src\TestBench\fully_associative_tlb_TB.vhd=VHDL Test Bench
+.\src\TestBench\fully_associative_tlb_TB_runtest.do=Macro
+[Groups]
+TestBench=1
