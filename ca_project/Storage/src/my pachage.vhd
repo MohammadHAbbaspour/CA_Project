@@ -15,7 +15,8 @@ package my_package is
 	type cache2set is array (0 to 1) of two_word_data_Type;
 	type cache2setarray is array (0 to 31) of cache2set;
 	type TLB_ppn_type is array (0 to 47) of std_logic_vector(3 downto 0); 
-	type TLB_tag_type is array (0 to 47) of std_logic_vector(8 downto 0);
+	type TLB_tag_type is array (0 to 47) of std_logic_vector(8 downto 0); 
+	type ppnarray is array (0 to 511) of std_logic_vector(3 downto 0);
 end my_package;
 
 				
