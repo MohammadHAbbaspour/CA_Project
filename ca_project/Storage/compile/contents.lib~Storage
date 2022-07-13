@@ -1,4 +1,4 @@
-226
+237
 ~E 1 "../src/cache.vhd" 8 Direct_Cach
 ~A 1 "../src/cache.vhd" 19 behavioral
 ~A 1 "../src/cache.vhd" 20 Direct_Cach_behavioral
@@ -11,6 +11,8 @@
 ~A 1 "../src/TestBench/fully_associative_tlb_TB.vhd" 11 TB_ARCHITECTURE
 ~E 1 "../src/io.vhd" 6 io
 ~A 1 "../src/io.vhd" 13 behavioral
+~E 1 "../src/TestBench/io_TB.vhd" 9 io_tb
+~A 1 "../src/TestBench/io_TB.vhd" 12 TB_ARCHITECTURE
 ~E 1 "../src/memory.vhd" 14 Memory
 ~A 1 "../src/memory.vhd" 27 behavioral
 ~A 1 "../src/memory.vhd" 27 Memory_behavioral
@@ -33,6 +35,7 @@
 ~A 1 "../src/TestBench/storage_TB.vhd" 12 TB_ARCHITECTURE
 ~C 1 "../src/TestBench/direct_cach_TB.vhd" 72 testbench_for_direct_cach
 ~C 1 "../src/TestBench/fully_associative_tlb_TB.vhd" 76 testbench_for_fully_associative_tlb
+~C 1 "../src/TestBench/io_TB.vhd" 50 testbench_for_io
 ~C 1 "../src/TestBench/memory_TB.vhd" 85 testbench_for_memory
 ~C 1 "../src/TestBench/pagetable_TB.vhd" 76 testbench_for_pagetable
 ~C 1 "../src/TestBench/processor_TB.vhd" 57 testbench_for_processor

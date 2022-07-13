@@ -12,3 +12,4 @@
 .\src\TestBench\direct_cach_TB.vhd
 .\src\TestBench\pagetable_TB.vhd
 .\src\TestBench\fully_associative_tlb_TB.vhd
+.\src\TestBench\io_TB.vhd

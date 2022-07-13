@@ -19,7 +19,7 @@ FAMILY=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=direct_cach_tb|TB_ARCHITECTURE|0 fully_associative_tlb_tb|TB_ARCHITECTURE|0 memory_tb|TB_ARCHITECTURE|0 pagetable_tb|TB_ARCHITECTURE|0 processor_tb|TB_ARCHITECTURE|0 storage_tb|TB_ARCHITECTURE|0
+HierarchyInformation=io_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 [Files]
@@ -43,6 +43,8 @@ TestBench/pagetable_TB.vhd=-1
 TestBench/pagetable_TB_runtest.do=-1
 TestBench/fully_associative_tlb_TB.vhd=-1
 TestBench/fully_associative_tlb_TB_runtest.do=-1
+TestBench/io_TB.vhd=-1
+TestBench/io_TB_runtest.do=-1
 [Files.Data]
 .\src\hard disk.vhd=VHDL Source Code
 .\src\my pachage.vhd=VHDL Source Code
@@ -64,5 +66,7 @@ TestBench/fully_associative_tlb_TB_runtest.do=-1
 .\src\TestBench\pagetable_TB_runtest.do=Macro
 .\src\TestBench\fully_associative_tlb_TB.vhd=VHDL Test Bench
 .\src\TestBench\fully_associative_tlb_TB_runtest.do=Macro
+.\src\TestBench\io_TB.vhd=VHDL Test Bench
+.\src\TestBench\io_TB_runtest.do=Macro
 [Groups]
 TestBench=1
